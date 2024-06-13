@@ -1,0 +1,191 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #00000073;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 1.5em;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.main-nav-left {
+    flex: 1;
+}
+
+.main-nav-right {
+    display: flex;
+    justify-content: flex-end;
+    flex: 3;
+    margin-right: 3em;
+}
+
+nav ul.sidebar {
+    display: none; /* Hide sidebar by default */
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.9);
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    font-size: calc(1em + 3px);
+}
+
+nav ul li a.bold {
+    font-weight: bolder;
+    /* margin-right: 10em; */
+    font-size: 1.5em;
+    position: relative;
+    right: 13vh;
+}
+
+.hideOnMobile {
+    display: none;
+}
+
+.menu-button {
+    cursor: pointer;
+}
+
+/* Extra Small Devices (Phones) */
+/* Minimum: Less than 576px */
+@media (max-width: 575px) {
+    nav {
+        padding: 1.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 0.5em;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    nav ul li a.bold {
+        right: 58em;
+        bottom: 0.7em;
+        font-size: 1.2em;
+    }
+
+    .menu-button {
+        display: block;
+        position: relative;
+        right: 35em;
+        bottom: 3.5em;
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    nav ul.sidebar {
+        display: none; /* Hide sidebar by default */
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 38.5em; /*change it later*/
+        height: 20em;
+        background-color: rgba(51, 51, 51, 0.9);
+    }
+}
+
+/* Small Devices (Tablets) */
+/* Minimum: 576px */
+/* Maximum: 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1em;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-nav-right {
+        margin-right: 0;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    nav ul li a.bold {
+        right: 0;
+        font-size: 1.2em;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    nav ul.sidebar {
+        display: none; /* Hide sidebar by default */
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        background-color: rgba(51, 51, 51, 0.9);
+    }
+}
+
+/* Add responsive design for larger screens */
+@media (min-width: 768px) {
+    .hideOnMobile {
+        display: inline;
+    }
+
+    .menu-button {
+        display: none;
+    }
+}

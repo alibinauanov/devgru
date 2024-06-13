@@ -1,0 +1,119 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    text-align: left;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+footer {
+    /* text-align: left; */
+    flex-direction: row;
+    background-color: #ffffff;
+    color: black;
+    height: 10em;
+}
+
+.allData {
+    margin-left: 2.5em;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: flex-start; /* Align items to the start of the container */
+    padding: 20px;
+    position: relative;
+    bottom: 0.1em;
+    background-color: #ffffff;
+    color: black;
+    width: 25%;
+}
+
+.navigationLinks {
+    position: relative;
+    bottom: 0.5em;
+}
+
+.navigation ul {
+    list-style: none; /* Remove bullet points */
+    flex-direction: column; /* Arrange items in a column */
+    padding: 0;
+    margin: 0;
+}
+
+.navigation h3 {
+    margin-bottom: 10px; /* Space between heading and list */
+}
+
+.navigation ul + ul {
+    margin-top: 10px; /* Space between the two ul elements */
+}
+
+.navigation li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+.navigation a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+.address {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: flex-start; /* Align items to the start of the container */
+    position: relative;
+    bottom: 185px;
+    left: 300px;
+    background-color: #ffffff;
+    color: black;
+    width: 25%;}
+
+.address h3 {
+    margin-bottom: 10px; /* Space between heading and list */
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: flex-start; /* Align items to the start of the container */
+    position: relative;
+    bottom: 310px; /* Adjust as needed */
+    left: 550px; /* Adjust as needed */
+    background-color: #ffffff;
+    color: black;
+    width: 25%;
+    padding: 20px;
+}
+
+.social-media h3 {
+    margin-bottom: 10px; /* Space between heading and links */
+}
+
+.social-links {
+    display: flex; /* Arrange items in a row */
+    flex-direction: row; /* Arrange items in a row */
+    gap: 10px; /* Space between the links */
+}
+
+.social-links a {
+    display: inline-block; /* Ensure the links are inline */
+}
+
+.social-media img {
+    width: 24px; /* Adjust the size of the icons */
+    height: 24px; /* Adjust the size of the icons */
+}

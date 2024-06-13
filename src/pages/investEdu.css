@@ -1,0 +1,318 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+html, body {
+    height: 100%;
+}
+
+.education {
+    position: relative;
+    text-align: center;
+    /* background-image: url('./assets/mainPageBackground.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    min-height: 100vh;
+    padding-top: 80px; /* Adjust based on NavBar height */
+    /* overflow-x: hidden; Prevent horizontal scrolling */
+}
+
+.firstBlock {
+    z-index: 6;
+    background: #f8f8f8;
+    background-image: url('../assets/education2.jpg');
+    background-size: cover; /* Cover ensures the image fills the container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    bottom: 80px;
+    display: block;
+}
+
+.blackBlockEducation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white;
+    padding: 70px;
+    text-align: left;
+}
+
+.titleEducation {
+    font-size: 3em;
+    width: 80%;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.banner {
+    width: 100%;
+    height: 20em;
+    overflow: hidden;
+    background: #ffffff;
+    position: relative;
+    margin: 20px 0;
+    position: relative;
+    bottom: 2em;
+}
+
+.banner h2 {
+    font-weight: 400;
+    font-size: 3em;
+    margin-left: 1.5em;
+    margin-bottom: 2em;
+}
+
+.bannerTrack {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+.bannerImage {
+    width: auto;
+    height: 7em;
+    margin-right: 3em;
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-10 * 7em - 10 * 1em)); /* Adjust based on the total width of all images and margins */
+    }
+}
+
+/* Slider styling */
+.sliderEucation {
+    margin-top: 20px;
+    padding: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sliderEducation-tabs {
+    display: flex;
+    width: 100%;
+    background-color: #857A74;
+    height: 5em;
+}
+
+.sliderEducation-tab {
+    flex: 1;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sliderEducation-tab.active {
+    background-color: #998E88;
+}
+
+.sliderEducation-content {
+    padding: 20px;
+    background-color: #998E88;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.sliderEducation-content h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: 0.8em;
+}
+
+.sliderEducation-content ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 80%;
+}
+
+.sliderEducation-content li {
+    font-size: 1.1em;
+    margin-bottom: 3em;
+    flex: 1 1 45%;
+    position: relative;
+    padding-left: 4em;
+    font-weight: lighter;
+}
+
+.sliderEducation-content li::before {
+    content: '\f0e7'; /* Font Awesome check icon */
+    font-family: 'Font Awesome 5 Free'; /* Font family for Font Awesome */
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2em;
+    color: white;
+    margin-left: 1em;
+}
+
+/* new */
+.investEduGraph {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.investEduGraph h2{
+    font-weight: 400;
+    font-size: 3em;
+    width: 11em;
+    margin-left: 1em;
+    position: relative;
+    bottom: 3em;
+}
+
+.investEduGraph p {
+    font-size: 1.5em;
+    margin-top: 3em;
+    /* margin-left: 3em; */
+    width: 10em;
+    position: relative;
+    right: 20em;
+    bottom: 2em;
+}
+
+.investGraphWrapper {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    position: relative;
+    top: 4em;
+}
+
+.investGraph {
+    width: 100%;
+    height: auto;
+}
+
+/* new */
+.textGraph {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1em;
+    color: black;
+    margin-top: 8em;
+}
+
+.block {
+    flex: 1;
+    margin: 1em;
+}
+
+.block h2 {
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.block p {
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* new */
+
+.table h2 {
+    font-weight: 400;
+    font-size: 2em;
+    margin-top: 5em;
+    margin-left: 2em;
+
+}
+
+.educationWrapper {
+    width: 100%;
+    margin-top: 4em;
+}
+
+.tableEducation {
+    width: 100%;
+    height: auto;
+}
+
+/* new */
+.lastBlock {
+    margin-top: 1em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.sharpCompetition, .standards, .planning {
+    padding: 1em;
+}
+
+.sharpCompetition {
+    background-color: #3B5E8B;
+}
+
+.standards {
+    background-color: #2F4B70;
+}
+
+.planning {
+    background-color: #172C43;
+}
+
+.h2Text h2 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 3em;
+    font-weight: 400;
+}
+
+.pText p {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    margin-left: 6em;
+    width: 50em;
+}
