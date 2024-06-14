@@ -8,6 +8,8 @@ import Contacts from './pages/contacts';
 import InvestEdu from './pages/investEdu';
 import Competition from './pages/competition';
 
+import './i18n';
+
 export default function App() {
   return (
     <div>

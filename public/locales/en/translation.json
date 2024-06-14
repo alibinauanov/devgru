@@ -1,0 +1,480 @@
+{
+    "navbar": {
+      "about": "About Us",
+      "programs": "Programs",
+      "team": "Team",
+      "education": "Education",
+      "competition": "Competition",
+      "contacts": "Contacts"
+    },
+    "about": {
+      "title": "The Development Group",
+      "content": " - we are a Kazakhstan-based university admissions consulting company founded in 2023. We offer high-quality consulting services for people who see themselves in the world's top-ranked educational institutions.",
+      "programsTitle": "Programs",
+      "programsContent1": "Our programs are led by a UPenn graduate",
+      "programsContent2": " who previously worked at top New York investment banks and investment firms. The programs were developed by six Ivy League graduates and students -  including a former Princeton admissions officer - specially for Kazakh students.",
+      "workWithKazakhs1": "The team of the program developers also serves as mentors and ",
+      "workWithKazakhs2": "works only with Kazakh students.",
+      "devgruProvides1": "DevGru provides full, end-to-end support for university admissions",
+      "devgruProvides2": "—undergraduate, MBA/EMBA, and Masters programs—all over the world, with a strong focus on the US and Middle Eastern/Asian branch campuses, UK, and Canada.",
+      "missionStatementTitle": "Mission Statemnt",
+      "missionStatementContent1": "Our mission",
+      "missionStatementContent2": " is to guide Kazakh students to the world top 50 universities (including Ivy League, MIT and Stanford) through rigorous, customized mentorship modeled after the American preparation methodology."
+    },
+    "team": {
+        "title": "Team",
+        "leftDesc": "We don’t have tutors or consultants. We have mentors who are involved throughout all stages of a student’s academic and extracurricular journey.",
+        "rightDesc": "The Development Group provides full, end-to-end support across all components of the university preparation and application process.",
+        "ivyMentors": "Our mentors have all attended Ivy League universities, and they only work with Kazakh students.",
+        "limitWork": "Each mentor is limited to working with only seven students in order to maximize allocation of time and attention. Unlike other education consulting firms, our mentors do not work with 20+ students.",
+        "subTitle1": "Mentor Profiles",
+        "subTitle2": " & Success cases",
+        "directorTitle": "DevGru Program Director:",
+        "directorStatus": "Director:",
+        "directorName": "Michael Y.",
+        "dirertorGrad": "Graduated from the",
+        "directorUniName": "University of Pennsylvania",
+        "directorUniInfo": "in ’16 (B.A., in Economics)",
+        "directorLocation": "Location:",
+        "directorLocationName": "Almaty, Kazakhstan",
+        "backgroundTitle": "Background",
+        "backgroundDesc1": "Michael most recently was an Assistant Vice President at H.I.G. Capital, an investment firm with $60 billion assets under management",
+        "backgroundDesc2": "He was situated within the credit arm of the firm where he completed nine platform investments and eight add-on investments amounting to $890 million in committed capital",
+        "backgroundDesc3": "Prior to H.I.G. Capital, Michael worked at PJT Partners, the investment banking division spin-off of The Blackstone Group, as well as at Citi",
+        "profExperience": "Professional Experience",
+        "successCases": "Success Cases",
+        "doYourTitle": "DO YOUR ",
+        "researchTitle": "RESEARCH",
+        "researchText1": "You will see the same success cases",
+        "researchText2": "on multiple company websites. Some will help with just SATs and IELTS or just personal statement essays."
+    },
+    "mentorBrianK": {
+        "mentorTitle": "Mentor:",
+        "mentorName": "Brian K.",
+        "mentorGraduated": "Graduated from the",
+        "mentorDegree": "University of Pennsylvania ",
+        "mentorUniInfo": "in ’17 (B.A., Economics)",
+        "mentorLocationTitle": "Location:",
+        "mentorLocation": "Diamond Bar, CA",
+        "successCasesTitle": "Success Cases",
+        "studentNameCase1": "Victor S.",
+        "studentUniCase1": "(Harvard University)",
+        "studentDescCase1": "- Entered Harvard University in 2023 with full scholarship",
+        "studentDegreeCase1": "- B.A., Economics & Mathematics",
+        "studentNameCase2": "Daisy C.",
+        "studentUniCase2": "(MIT)",
+        "studentDescCase2": "- Entered MIT in 2022 with full scholarship",
+        "studentDegreeCase2": "- B.A., Biology",
+        "studentAcceptCase2": "- Acceptance to CalTech",
+        "studentNameCase3": "Jared L.",
+        "studentUniCase3": "(University of Pennsylvania)",
+        "studentDescCase3": "- Entered the University of Pennsylvania in 2017",
+        "studentDegreeCase3": "- B.A., Music & English",
+        "studentNameCase4": "Jocelyn L.",
+        "studentUniCase4": "(MIT)",
+        "studentDescCase4": "- Entered MIT in 2019 with full scholarship",
+        "studentDegreeCase4": "- B.A., Physics",
+        "studentAcceptCase4": "- Acceptance to CalTech"
+    },
+    "mentorKevinS": {
+        "mentorTitle": "Mentor:",
+        "mentorName": "Kevin S.",
+        "mentorGrad": "Graduated from",
+        "mentorDegree": "Harvard University ",
+        "mentorUniInfo": "in ‘17 (A.B., Social Studies)",
+        "mentorLocationTitle": "Location:",
+        "mentorLocation": "New York, NY",
+        "successCasesTitle": "Success Cases",
+        "studentNameCase1": "Pedro M.",
+        "studentUniCase1": "(Princeton Unversity)",
+        "studentDescCase1": "- Transferred from Hudson County CC in 2021 with full scholarship",
+        "studentDegreeCase1": "- B.A., Mathematics",
+        "studentAcceptCase1": "- Acceptance to Columbia University",
+        "studentNameCase2": "Irene K.",
+        "studentUniCase2": "(University of Pennsylvania)",
+        "studentDescCase2": "- Entered the University of Pennsylvania in 2017 with full scholarship",
+        "studentDegreeCase2": "- B.S.E., Computer Science",
+        "studentNameCase3": "Charles L.",
+        "studentUniCase3": "(Harvard University)",
+        "studentDescCase3": "- Entered Harvard University in 2017 with full scholarship",
+        "studentDegreeCase3": "- B.A., Biology",
+        "studentNameCase4": "Daniel B.",
+        "studentUniCase4": "(Carnegie Mellon University)",
+        "studentDescCase4": "- Entered Carnegie Mellon in 2017 with partial financial aid (#24 U.S. university as of 2024)",
+        "studentDegreeCase4": "- B.S., Physics"
+    },
+    "mentorTeddyK": {
+        "mentorTitle": "Mentor:",
+        "mentorName": "Teddy K.",
+        "mentorGrad": "Graduated from",
+        "mentorDegree": "Harvard University ",
+        "mentorUniInfo": "in ’18 (B.A., Government)",
+        "mentorLocationTitle": "Location:",
+        "mentorLocation": "New York, NY; Los Angeles, CA",
+        "successCasesTitle": "Success Cases",
+        "studentNameCase1": "Jaime C.",
+        "studentUniCase1": "(Harvard University)",
+        "studentDescCase1": "- Entered Harvard University in 2013",
+        "studentDegreeCase1": "- B.A., Political Science & Government",
+        "studentNameCase2": "Vincent M.",
+        "studentUniCase2": "(Harvard University)",
+        "studentDescCase2": "- Entered Harvard University in 2014",
+        "studentDegreeCase2": "- B.A., Economics",
+        "studentNameCase3": "Matt M.",
+        "studentUniCase3": "(Georgetown University)",
+        "studentDescCase3": "- Entered Georgetown University in 2014 (#22 U.S. university as of 2024)",
+        "studentDegreeCase3": "- B.A., Economics",
+        "studentNameCase4": "Esther C.",
+        "studentUniCase4": "(University of Virginia)",
+        "studentDescCase4": "- Entered the University of Virginia in 2018 with full scholarship (#24 U.S. university as of 2024)",
+        "studentDegreeCase4": "- Major undeclared"
+    },
+    "mentorVidurB": {
+        "mentorTitle": "Mentor:",
+        "mentorName": "Vidur B.",
+        "mentorGrad": "Graduated from",
+        "mentorDegree": "Princeton University ",
+        "mentorUniInfo": "in ‘20 (B.A., Philosophy)",
+        "mentorLocationTitle": "Location:",
+        "mentorLocation": "New York, NY & Washington, D.C.",
+        "successCasesTitle": "Success Cases",
+        "studentNameCase1": "Vani S.",
+        "studentUniCase1": "(Princeton University)",
+        "studentDescCase1": "- Entered Princeton University in 2023 with a full scholarship",
+        "studentDegreeCase1": "- B.S.E., Chemical & Biological Engineering",
+        "studentNameCase2": "Fahad A.",
+        "studentUniCase2": "(Columbia University)",
+        "studentDescCase2": "- Entered Columbia University in 2022 with a full scholarship",
+        "studentDegreeCase2": "- B.S., Mechanical Engineering",
+        "studentNameCase3": "Divya S.",
+        "studentUniCase3": "(University of Pennsylvania)",
+        "studentDescCase3": "- Entered the University of Pennsylvania in 2021",
+        "studentDegreeCase3": "- B.A., Biology",
+        "studentNameCase4": "Mario F.",
+        "studentUniCase4": "(Harvard University)",
+        "studentDescCase4": "- Entered Harvard University in 2020 with a full scholarship",
+        "studentDegreeCase4": "- B.A., Computer Science"
+    },
+    "mentorAdrienP": {
+        "mentorTitle": "Mentor:",
+        "mentorName": "Adrien P.",
+        "mentorCurrAttend": "Currently attending",
+        "mentorDegree": "Yale University ",
+        "mentorDegreeInfo": "(B.A. Economics)",
+        "mentorLocationTitle": "Location:",
+        "mentorLocation": "New Haven, CT",
+        "successCasesTitle": "Success Cases",
+        "studentNameCase1": "Datis D.",
+        "studentUniCase1": "(Yale University)",
+        "studentDescCase1": "- Entered Yale University in 2023",
+        "studentDegreeCase1": "- B.A., Economics & Global Affairs",
+        "studentNameCase2": "Matthew A.",
+        "studentUniCase2": "(Brown University)",
+        "studentDescCase2": "- Entered Brown University in 2023",
+        "studentDegreeCase2": "- B.S., Biology",
+        "studentNameCase3": "Ava W.",
+        "studentUniCase3": "(New York University)",
+        "studentDescCase3": "- Entered New York University in 2023 (#35 U.S. university as of 2024)",
+        "studentDegreeCase3": "- B.A., English",
+        "studentNameCase4": "Ryan H.",
+        "studentUniCase4": "(University of Michigan)",
+        "studentDescCase4": "- Entered the University of Michigan in 2023 (#21 U.S. university as of 2024)",
+        "studentDegreeCase4": "- B.A., History"
+    },
+    "programs": {
+        "programsTitle": "Programs",
+        "premiumPrepDesc": "Designed for students currently in grades 6-10/11 (varies depending on high school) targeting top universities",
+        "premiumDesc": "Designed for students applying to strong & elite universities this upcoming admissions cycle",
+        "mbaMastersDesc": "Designed for both recent graduates and experienced professionals targeting top programs",
+        "ifText": "If you are a university graduate and/or experienced professional…",
+        "ifLeftText": "If you are a university graduate and/or experienced professional looking to pursue an MBA/EMBA or Masters program, contact us for a consultation.",
+        "ifRightText": "Our post-graduate program mentor has sent both international and domestic students to Harvard Business School, Stanford Graduate School of Business, and Stanford Doerr School of Sustainability.",
+        "fillOutForm": "Fill out the form and our manager will contact you!",
+        "submitButtonText": "Submit",
+        "namePlaceholder": "Name",
+        "emailPlaceholder": "E-mail",
+        "phonePlaceholder": "Phone",
+        "americanMethodTitle": "American Methodology",
+        "appRoadmapTitle": "Preparation & Application Roadmap"
+    },
+    "mentorship": {
+        "devGruMentorshipTitle": "DevGru Mentorship",
+        "scopeOfServices": "Scope of Services",
+        "serviceDesc": "We take the American preparation methodology and customize it for the Kazakh students, mindset, and available opportunities"
+    },
+    "topicsEdu": [
+    {
+      "title": "Networking Opportunities",
+      "description": [
+        "Arguably, the most significant benefit of attending a top university is the opportunity to build a strong network, which plays a large role in securing future internships, jobs, partnerships, investments, etc.",
+        "You would be surprised to see the caliber of people who end up being in your classes, clubs, dormitories, and fraternities/sororities"
+      ]
+    },
+    {
+      "title": "Employment Opportunities",
+      "description": [
+        "Beyond simply having access to renowned faculty and education, having a diploma from a top university will open many doors for internships and full-time opportunities",
+        "For instance, the firms for which I have worked were fixated on hiring from only ~10-15 universities. The connection that alumni have is too often underestimated, especially in interview settings"
+      ]
+    },
+    {
+      "title": "Career Advancement / Transition",
+      "description": [
+        "I advise you to do a LinkedIn search for high-ranking employees at companies you would like to work at—even Kazakh companies. You will find that many have graduated from top US/UK universities with undergraduate degrees and/or received MBA/Masters/equivalent certificates",
+        "For experienced professionals, receiving an MBA/EMBA/Masters from a top program is extremely beneficial (often necessary) if the goal is to break through the career ceiling"
+      ]
+    }
+  ],
+  "preparationStagesCompetition": [
+    {
+      "title": "Increased Awareness and Access",
+      "content": [
+        {
+          "description": [
+            "Generally, more parents/students have become aware of educational opportunities abroad through social media",
+            "As more international students get accepted into top universities, more parents/students are inspired and incentivized to apply",
+            "Preparatory and consultancy services have also made applying to universities abroad more accessible",
+            "More parents are also aware of the increasing competitiveness and are investing in their children’s education at an early age as this one of the most surefire ways to improve acceptance chances"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prestige and Career Prospects",
+      "content": [
+        {
+          "description": [
+            "The job market is also getting more and more competitive, and companies are always looking for better educated candidates",
+            "More students and professionals are also realizing that one’s diploma and educational network are playing an increasingly significant role in securing interviews and job offers",
+            "As professionals look to do more business outside of their home country, they are realizing the value of internationally recognized degrees as well as top university alumni networks"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Globalization",
+      "content": [
+        {
+          "description": [
+            "There has been a strong trend towards internationalization in higher education with top US universities making intentional efforts to market themselves to international applicants",
+            "Top US universities have also made a calculated effort to diversify their student bodies",
+            "Stronger emphasis by governments to provide funding for both domestic curriculums and for sponsoring scholarships",
+            "More countries sending more applicants means more competition"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economic Growth",
+      "content": [
+        {
+          "description": [
+            "Rising incomes and economic growth in many developing countries have enabled more families to send their children abroad",
+            "Growth has allowed families to send students to better primary and secondary schools and invest more heavily in consultancy services",
+            "Even within their own countries, rise of industries and multinational corporations has generated demand for internationally educated professionals, prompting more students to seek prestigious university degrees"
+          ]
+        }
+      ]
+    }
+  ],
+    "topics": {
+        "0": {
+        "title": "Personalized Application Strategy",
+        "description": [
+            "Generate and iterate personalized university and/or summer program lists based on student’s preferences, abilities, interests, and career aspirations",
+            "Align application with each university and/or summer program’s emphasis on certain programs, criteria, etc.",
+            "Maximize acceptance probability (ex. spin narrative/experience and apply as a Sociology major vs. pure Econ major)",
+            "Guide student to understand exactly what each university and/or summer program looks for and how to best position student to showcase his or her application"
+        ]
+        },
+        "1": {
+        "title": "Extracurricular Enhancement",
+        "description": [
+            "Determine which ECs should be continued/discontinued",
+            "Develop a plan to achieve leadership positions in clubs/organization",
+            "Explore and recommend available opportunities (ex. clubs, research, internships, independent projects, volunteering, etc.) and even help create and develop these activities",
+            "Ensure proper allocation of time and resources between studies, sports, volunteering, music, projects, etc."
+        ]
+        },
+        "2": {
+        "title": "Academic Guidance & Support",
+        "description": [
+            "Advise on course selection, programs, and certificates that are aligned with their interests and strengths",
+            "Regular check-ins and support to help maintain peak academic performance, critical for admission to elite institutions"
+        ]
+        },
+        "3": {
+        "title": "University Application / Summer Program Application Support",
+        "description": [
+            "Help generate essay ideas, brainstorming, teaching creative styles, providing input/editing, etc. for personal statement, supplemental essays, etc.",
+            "Overall, provide full end-to-end support, including helping students understand exactly admissions committees are looking for, CSS / financial aid support, alumni interview assistance"
+        ]
+        },
+        "4": {
+        "title": "Recommendation Letter & Miscellaneous",
+        "description": [
+            "Analyze pros and cons of potential recommendation letter providers",
+            "Provide customized templates (if applicable) and review/correct the letters with the consent of those submitting them",
+            "Supporting anything that aligns with the student’s goals (ex. resume creation/editing, mock interviews, etc.)"
+        ]
+        },
+        "5": {
+        "title": "SAT & IELTS Preparation",
+        "description": [
+            "Unlimited online group classes three times a week throughout length of contract",
+            "Individual lessons can be arranged at additional cost"
+        ]
+        }
+    },
+    "preparationStages": {
+        "0": {
+        "title": "Early Age (10-13)",
+        "content": [
+            {
+            "stage": "Explore and experiment",
+            "description": [
+                "This is really the only time you have to consider a range of fields of study as well as try various activities to gauge potential",
+                "In order to be accepted into a top university, it is important to"
+            ]
+            },
+            {
+            "stage": "Create a shortlist",
+            "description": [
+                "Having a shortlist of fields of study and activities will set the stage for building a genuine narrative, which is crucial for the ultimate application",
+                "Make a preliminary university list"
+            ]
+            },
+            {
+            "stage": "Research potential career paths",
+            "description": [
+                "Keep an open mind look into different career trajectories that stem from the shortlist of fields of study",
+                "It is never too early to seek career guidance"
+            ]
+            },
+            {
+            "stage": "Build academic foundation",
+            "description": [
+                "Develop consistent study schedule and practice time management. I cannot emphasize this enough"
+            ]
+            }
+        ]
+        },
+        "1": {
+        "title": "Development Period (14-16)",
+        "content": [
+            {
+            "stage": "Maintain academic performance",
+            "description": [
+                "Top universities are very unlikely to consider applicants who are struggling in high school—excellence is seen as a minimum requirement, especially if you attend a school in Kazakhstan",
+                "Begin advanced coursework such as APs, university-level courses, certifications, etc. as applicable",
+                "Seek tutoring if you have the resources. If you don’t, your competitors will"
+            ]
+            },
+            {
+            "stage": "Build and develop extracurricular foundation",
+            "description": [
+                "Lay out gameplans to achieve leadership/executive roles in clubs",
+                "Be sure to document achievements and awards in real time"
+            ]
+            },
+            {
+            "stage": "Prepare for standardized tests",
+            "description": [
+                "Start studying intensively for SATs and IELTS. The most common complaint I hear is, “I wish I started studying earlier”"
+            ]
+            },
+            {
+            "stage": "Strengthen writing abilities",
+            "description": [
+                "Read both successful and unsuccessful university application essays and analyses consistently",
+                "Write mock personal statements and supp. essays well in advance"
+            ]
+            },
+            {
+            "stage": "Recommender selection",
+            "description": [
+                "Develop relationships with potential recommendation letter providers"
+            ]
+            }
+        ]
+        },
+        "2": {
+        "title": "Final Readiness & Application Period",
+        "content": [
+            {
+            "stage": "Ensure extracurricular activity portfolio has yielded results",
+            "description": [
+                "Each activity should have shown results by now. If not, get this done",
+                "Keep in mind how you will be representing each activity on the Common App or similar platform",
+                "“Did [xx], which resulted in [xx]”"
+            ]
+            },
+            {
+            "stage": "Focus on advanced coursework",
+            "description": [
+                "Continue taking APs, university-level courses, certifications, etc. as applicable. High scores are necessary"
+            ]
+            },
+            {
+            "stage": "Standardized tests",
+            "description": [
+                "For top universities, you will need to pass the 1500 SAT and 8.0 IELTS score thresholds"
+            ]
+            },
+            {
+            "stage": "Applications",
+            "description": [
+                "Dedicate at least 6 months to drafting and iterating your university essays",
+                "Weigh pros and cons of potential recommenders and inform them at least 2 months before",
+                "Gather necessary documents (transcripts, certificates, financial information, etc.) well in advance"
+            ]
+            }
+        ]
+    }
+  },
+  "investment": {
+        "investmentTitle": "Investment in Your Education",
+        "whyTopUnisTitle": "Why Top Universities?",
+        "importanceInvestEduTitle": "Importance of Investing in Education",
+        "importanceInvestEduSubTitle": "International Kazakh Students in the U.S.",
+        "importanceInvestEduUnderTitle1": "Growing Trend:",
+        "importanceInvestEduUnderDesc1_1": "There has been a massive increase in the number of Kazakh students enrolling in U.S. universities in recent years, highlighting a ",
+        "importanceInvestEduUnderDesc1_2": "growing interest in international education",
+        "importanceInvestEduUnderTitle2": "Post-COVID Recovery:",
+        "importanceInvestEduUnderDesc2_1": " After a slight dip from 2020 to 2021 due to the COVID-19 pandemic, ",
+        "importanceInvestEduUnderDesc2_2": "there has been a robust recovery, ",
+        "importanceInvestEduUnderDesc2_3": "with enrollments rising by 33.3% in 2023, reaching a peak of 2,440 students",
+        "importanceInvestEduUnderTitle3": "Increasing Competitiveness:",
+        "importanceInvestEduUnderDesc3_1": " The increasing number of students signifies ",
+        "importanceInvestEduUnderDesc3_2": "more competition",
+        "importanceInvestEduUnderDesc3_3": "among Kazakh students for prestigious spots in U.S. universities",
+        "tableTitle": "Largest Acceptance Rate Decrease (2006 vs. 2018)",
+        "importanceInvestEduBottomTitle1": "Sharper Competition: ",
+        "importanceInvestEduBottomDesc1": "Acceptance rates at top U.S. universities have drastically decreased over the past decade, making the admission process highly competitive",
+        "importanceInvestEduBottomTitle2": "Higher Standards: ",
+        "importanceInvestEduBottomDesc2": "The significant drops in acceptance rates, such as an 81.1% decrease at the University of Chicago, indicate rising academic and extracurricular standards",
+        "importanceInvestEduBottomTitle3": "Impact on College Planning: ",
+        "importanceInvestEduBottomDesc3": "The decline in acceptance rates necessitates more robust college planning and preparation. Students need to excel academically and beyond to stand out in these increasingly competitive applicant pools"
+    },
+    "competition": {
+        "competitionTitle": "Your Competition",
+        "competitionSlogan": "Growth in applications have consistently outpaced the growth in available spots",
+        "compeitionQuestion": "Why are university admissions getting more and more competitive?",
+        "competitorProfilesTitle": "Competitor Profiles"
+    },
+    "contacts": {
+        "contactsTitle": "Contacts",
+        "phoneTitle": "Phone",
+        "emailTitle": "E-mail",
+        "addressTitle": "Address",
+        "addressInfo": "First Street, 43/1, Block 1"
+    },
+    "footer": {
+        "navigationTitle": "Navigation",
+        "aboutUsNav": "About Us",
+        "programsNav": "Programs",
+        "teamNav": "Team",
+        "addressNav": "Address",
+        "socialMediaTitle": "Social Media"
+    }
+}

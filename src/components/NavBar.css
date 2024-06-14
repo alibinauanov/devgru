@@ -33,6 +33,21 @@ nav ul {
     padding: 0;
 }
 
+.devgruLogo {
+    width: 5em;
+    height: auto;
+}
+
+.lngBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 0.3em;
+}
+
 .main-nav-left {
     flex: 1;
 }

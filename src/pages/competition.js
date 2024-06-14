@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './competition.css';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
+import WhatsAppButton from '../components/whatsappBtn';
+
+import { useTranslation } from 'react-i18next';
 
 const profiles = [
     {
@@ -178,59 +181,6 @@ const profiles = [
     }
 ];
 
-const preparationStages = [
-    {
-        title: 'Increased Awareness and Access',
-        content: [
-            {
-                description: [
-                    "Generally, more parents/students have become aware of educational opportunities abroad through social media",
-                    "As more international students get accepted into top universities, more parents/students are inspired and incentivized to apply",
-                    "Preparatory and consultancy services have also made applying to universities abroad more accessible",
-                    "More parents are also aware of the increasing competitiveness and are investing in their children’s education at an early age as this one of the most surefire ways to improve acceptance chances"
-                ]
-            }
-        ]
-    },
-    {
-        title: 'Prestige and Career Prospects',
-        content: [
-            {
-                description: [
-                    "The job market is also getting more and more competitive, and companies are always looking for better educated candidates",
-                    "More students and professionals are also realizing that one’s diploma and educational network are playing an increasingly significant role in securing interviews and job offers",
-                    "As professionals look to do more business outside of their home country, they are realizing the value of internationally recognized degrees as well as top university alumni networks"
-                ]
-            }
-        ]
-    },
-    {
-        title: 'Globalization',
-        content: [
-            {
-                description: [
-                    "There has been a strong trend towards internationalization in higher education with top US universities making intentional efforts to market themselves to international applicants",
-                    "Top US universities have also made a calculated effort to diversify their student bodies",
-                    "Stronger emphasis by governments to provide funding for both domestic curriculums and for sponsoring scholarships",
-                    "More countries sending more applicants means more competition"
-                ]
-            }
-        ]
-    },
-    {
-        title: 'Economic Growth',
-        content: [
-            {
-                description: [
-                    "Rising incomes and economic growth in many developing countries have enabled more families to send their children abroad",
-                    "Growth has allowed families to send students to better primary and secondary schools and invest more heavily in consultancy services",
-                    "Even within their own countries, rise of industries and multinational corporations has generated demand for internationally educated professionals, prompting more students to seek prestigious university degrees"
-                ]
-            }
-        ]
-    }
-];
-
 function ProfileTable({ profile }) {
     return (
         <table className="profile-table">
@@ -322,6 +272,26 @@ function Dropdown({ title, content, color }) {
 
 export default function Competition() {
     const [activeProfileIndex, setActiveProfileIndex] = useState(0);
+    const { t } = useTranslation();
+
+    const preparationStagesCompetition = [
+        {
+            title: t('preparationStagesCompetition.0.title'),
+            content: t('preparationStagesCompetition.0.content', { returnObjects: true })
+        },
+        {
+            title: t('preparationStagesCompetition.1.title'),
+            content: t('preparationStagesCompetition.1.content', { returnObjects: true })
+        },
+        {
+            title: t('preparationStagesCompetition.2.title'),
+            content: t('preparationStagesCompetition.2.content', { returnObjects: true })
+        },
+        {
+            title: t('preparationStagesCompetition.3.title'),
+            content: t('preparationStagesCompetition.3.content', { returnObjects: true })
+        }
+    ];
 
     return (
         <div className='competition'>
@@ -329,15 +299,15 @@ export default function Competition() {
             <main>
                 <div className='firstBlockComp'>
                     <div className='blackBlockCompetition'>
-                        <h3 className='titleCompetition'>Your Competition</h3>
-                        <p className='underCompetition'>Growth in applications have <span className='italic'>consistently outpaced</span> the growth in available spots </p>
+                        <h3 className='titleCompetition'>{t('competition.competitionTitle')}</h3>
+                        <p className='underCompetition'>{t('competition.competitionSlogan')}</p>
                     </div>
                 </div>
                 <div className='question'>
-                    <h2>Why are university admissions getting more and more competitive?</h2>
+                    <h2>{t('competition.compeitionQuestion')}</h2>
                 </div>
                 <div className='dropdown-container'>
-                    {preparationStages.map((stage, index) => (
+                    {preparationStagesCompetition.map((stage, index) => (
                         <Dropdown 
                             key={index}
                             title={stage.title} 
@@ -348,7 +318,7 @@ export default function Competition() {
                 </div>
                 <div className='profiles'>
                     <div className='titleProfile'>
-                        <h2>Competitor Profiles</h2>
+                        <h2>{t('competition.competitorProfilesTitle')}</h2>
                     </div>
                     <div className='tab-container'>
                         {profiles.map((profile, index) => (
@@ -365,6 +335,7 @@ export default function Competition() {
                 </div>
             </main>
             <Footer />
+            <WhatsAppButton />
         </div>
     );
 }

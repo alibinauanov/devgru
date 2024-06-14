@@ -84,7 +84,7 @@ nav {
 .mainBlockAbout {
     z-index: 6;
     background: #f8f8f8;
-    background-image: url('../assets/mainPageBackground.jpg');
+    background-image: url('../assets/aboutUsbckgrnd.jpg');
     background-size: cover; /* Cover ensures the image fills the container */
     background-position: center; /* Center the image */
     background-repeat: no-repeat;

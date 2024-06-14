@@ -1,8 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './NavBar.css';
 
+import devGruLogo from '../assets/devGruLogo.png';
+
 function NavBar() {
+  const { i18n, t } = useTranslation();
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -33,18 +37,31 @@ function NavBar() {
     sidebar.style.display = 'none';
   };
 
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <nav>
       <ul className="main-nav-left">
-        <li><Link to="/" className="bold">DEV GRU</Link></li>
+        <li>
+          <Link to="/" className="bold">
+            <img src={devGruLogo} className='devgruLogo' />
+          </Link>
+        </li>
       </ul>
       <ul className="main-nav-right">
-        <li className="hideOnMobile"><Link to="/about">About Us</Link></li>
-        <li className="hideOnMobile"><Link to="/programs">Programs</Link></li>
-        <li className="hideOnMobile"><Link to="/team">Team</Link></li>
-        <li className="hideOnMobile"><Link to="/investedu">Education</Link></li>
-        <li className="hideOnMobile"><Link to="/competition">Competition</Link></li>
-        <li className="hideOnMobile"><Link to="/contacts">Contacts</Link></li>
+        <li className="hideOnMobile"><Link to="/about">{t('navbar.about')}</Link></li>
+        <li className="hideOnMobile"><Link to="/programs">{t('navbar.programs')}</Link></li>
+        <li className="hideOnMobile"><Link to="/team">{t('navbar.team')}</Link></li>
+        <li className="hideOnMobile"><Link to="/investedu">{t('navbar.education')}</Link></li>
+        <li className="hideOnMobile"><Link to="/competition">{t('navbar.competition')}</Link></li>
+        <li className="hideOnMobile"><Link to="/contacts">{t('navbar.contacts')}</Link></li>
+        <li>
+          <button onClick={() => changeLanguage(i18n.language === 'en' ? 'ru' : 'en')} className='lngBtn'>
+            {i18n.language === 'en' ? 'RU' : 'ENG'}
+          </button>
+        </li>
         <li className="menu-button" onClick={showSidebar}>
           <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
@@ -61,12 +78,17 @@ function NavBar() {
             </svg>
           </a>
         </li>
-        <li><Link to="/about" onClick={hideSidebar}>About Us</Link></li>
-        <li><Link to="/programs" onClick={hideSidebar}>Programs</Link></li>
-        <li><Link to="/team" onClick={hideSidebar}>Team</Link></li>
-        <li><Link to="/investedu" onClick={hideSidebar}>Education</Link></li>
-        <li><Link to="/competition" onClick={hideSidebar}>Competition</Link></li>
-        <li><Link to="/contacts" onClick={hideSidebar}>Contacts</Link></li>
+        <li><Link to="/about" onClick={hideSidebar}>{t('navbar.about')}</Link></li>
+        <li><Link to="/programs" onClick={hideSidebar}>{t('navbar.programs')}</Link></li>
+        <li><Link to="/team" onClick={hideSidebar}>{t('navbar.team')}</Link></li>
+        <li><Link to="/investedu" onClick={hideSidebar}>{t('navbar.education')}</Link></li>
+        <li><Link to="/competition" onClick={hideSidebar}>{t('navbar.competition')}</Link></li>
+        <li><Link to="/contacts" onClick={hideSidebar}>{t('navbar.contacts')}</Link></li>
+        <li>
+          <button onClick={() => changeLanguage(i18n.language === 'en' ? 'ru' : 'en')}>
+            {i18n.language === 'en' ? 'RU' : 'ENG'}
+          </button>
+        </li>
       </ul>
     </nav>
   );
