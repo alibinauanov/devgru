@@ -1,21 +1,104 @@
 .whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #016791;
-    border-radius: 50%;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
-    z-index: 1000; /* Ensure the button is on top of other elements */
+  position: fixed;
+  bottom: 2rem; /* Changed to rem for better scalability */
+  right: 2rem;  /* Changed to rem for better scalability */
+  background-color: #016791;
+  border-radius: 50%;
+  padding: 1rem; /* Changed to rem for better scalability */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  z-index: 1000; /* Ensure the button is on top of other elements */
+}
+
+.whatsapp-button img {
+  width: 2.5rem;  /* Changed to rem for better scalability */
+  height: 2.5rem; /* Changed to rem for better scalability */
+}
+
+.whatsapp-button:hover {
+  background-color: #014f68; /* Slightly darker shade for hover effect */
+}
+
+/* Styles for max-width: 480px */
+@media (max-width: 480px) {
+  .whatsapp-button {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    padding: 0.75rem;
   }
-  
+
   .whatsapp-button img {
-    width: 40px; /* Adjust size as needed */
-    height: 40px; /* Adjust size as needed */
+    width: 2rem;
+    height: 2rem;
   }
-  
-  .whatsapp-button:hover {
-    background-color: #014f68; /* Slightly darker shade for hover effect */
+}
+
+/* Medium-sized mobile devices (landscape) */
+@media (max-width: 768px) {
+  .whatsapp-button {
+    bottom: 1.75rem;
+    right: 1.75rem;
+    padding: 0.875rem;
   }
-  
+
+  .whatsapp-button img {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}
+
+/* Tablets (portrait and landscape) */
+@media (max-width: 1024px) {
+  .whatsapp-button {
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1rem;
+  }
+
+  .whatsapp-button img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+/* Small laptops */
+@media (max-width: 1366px) {
+  .whatsapp-button {
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1rem;
+  }
+
+  .whatsapp-button img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+/* Medium to large desktops */
+@media (min-width: 1367px) {
+  .whatsapp-button {
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1rem;
+  }
+
+  .whatsapp-button img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+/* Large desktops and ultra-wide screens */
+@media (min-width: 1600px) {
+  .whatsapp-button {
+    bottom: 2.5rem;
+    right: 2.5rem;
+    padding: 1.25rem;
+  }
+
+  .whatsapp-button img {
+    width: 3rem;
+    height: 3rem;
+  }
+}

@@ -20,13 +20,15 @@ html, body {
 
 .team {
     position: relative;
-    text-align: center;
+    text-align: left; /* Changed from center */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
     min-height: 100vh;
     padding-top: 80px;
     background-color: #ffffff;
+    width: 100%; /* Ensuring width is 100% */
+    overflow-x: hidden; /* Ensuring no horizontal scroll */
 }
 
 .mainBlock {
@@ -41,18 +43,6 @@ html, body {
     position: relative;
     bottom: 80px;
     display: block;
-
-    /* z-index: 6;
-    background: #f8f8f8;
-    background-image: url('../assets/mainPageBackground.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 73vh;
-    width: 100%;
-    position: relative;
-    bottom: 80px;
-    display: block; */
 }
 
 .blackBlockDevGruIntro {
@@ -78,7 +68,7 @@ html, body {
     display: inline-block;
     font-size: 1.4em;
     font-weight: 100;
-    width: 40%;
+    width: 45%;
     margin: 0;
     vertical-align: top;
 }
@@ -93,9 +83,10 @@ html, body {
 
 .textBlock {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 20em;
+    height: auto;
     padding: 0;
     width: 100%;
     position: relative;
@@ -159,11 +150,14 @@ html, body {
 .directorInfo {
     margin-top: 3em;
     margin-bottom: 3em;
+    text-align: left;
 }
 
 .infoContainer {
     display: flex;
-    height: 35em;
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+    gap: 1em; /* Add some gap between the elements */
+    align-items: stretch; /* Ensure all items stretch to the same height */
 }
 
 .titleDev {
@@ -175,13 +169,19 @@ html, body {
 
 .michaelInfo, .backgroundInfo {
     flex: 1;
+    min-width: 300px; /* Ensuring minimum width for small screens */
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 .michaelInfo {
-    flex: 0 0 30%;
     background-color: #318E6D;
-    margin-right: 1em;
     color: white;
+    padding: 1em;
+}
+
+.backgroundInfo {
+    background-color: #7CA597;
+    padding: 1em;
 }
 
 .textPart {
@@ -270,8 +270,9 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    height: 30em;
+    height: auto;
     color: white;
+    padding: 1em;
 }
 
 .backgroundDisc ul {
@@ -300,35 +301,42 @@ html, body {
 .inlineBlock {
     display: flex;
     gap: 2em;
+    flex-wrap: wrap;
 }
 
 .profExp, .successCases {
     flex: 1;
+    min-width: 200px;
 }
 
 .profExp h3, .successCases h3 {
     font-size: 1.5em;
-    margin-left: 2em;
-    margin-top: 2em;
+    margin: 0 0 1em 2em;
     font-weight: 400;
+    display: flex;
+    align-items: center;
 }
 
 .successCases {
     display: flex;
-    flex-wrap: wrap; /* Ensure that items wrap to the next line if they don't fit in one line */
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.successCases .logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding-left: 2em;
 }
 
 .figureUni {
-    position: relative;
-    right: 10em;
-    top: 7em;
-    width: 4em;
-    height: 4em;
+    width: 2.5em;
+    height: 2.5em;
     background-color: white;
-    margin-bottom: 1em;
-    margin-right: 20em;
-    display: inline-block;
-    margin: 5px; /* Adjust the margin as needed for spacing */
+    position: relative;
+    /* top: 4rem;
+    right: 11rem; */
 }
 
 .figureUni::after {
@@ -339,42 +347,42 @@ html, body {
     transform: translateX(-50%);
     width: 0;
     height: 0;
-    border-left: 2em solid transparent;
-    border-right: 2em solid transparent;
+    border-left: 1.3em solid transparent;
+    border-right: 1.3em solid transparent;
     border-top: 20px solid white;
 }
 
 .uniLogo {
+    width: 80%;
+    height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
-    height: auto;
 }
 
 .higCapital {
     width: 9em;
     height: auto;
     position: relative;
-    right: 4em;
-    top: 1.5em;
+    left: 3rem;
+    top: 0em;
 }
 
 .pjtLogo {
     width: 4em;
     height: auto;
     position: relative;
-    right: 2em;
-    top: 1.5em;
+    left: 5em;
+    top: 0rem;
 }
 
 .citiLogo {
     width: 4em;
     height: auto;
     position: relative;
-    right: 0em;
-    top: 1em;
+    left: 7rem;
+    bottom: 0.5em;
 }
 
 /* new */
@@ -383,7 +391,7 @@ html, body {
     margin-bottom: 3em;
     width: 100%;
     height: auto;
-    text-align: center;
+    text-align: left;
 }
 
 .mentorTitle {
@@ -400,12 +408,13 @@ html, body {
 
 .inlineBlocks {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
     justify-content: space-between;
     align-items: stretch;
-    height: 35em;
     margin-bottom: 2em;
+    gap: 1em; /* Added gap between blocks */
 }
 
 .brianInfo, .successCasesInfo {
@@ -415,7 +424,8 @@ html, body {
 }
 
 .brianInfo {
-    width: 28%;
+    flex: 1;
+    min-width: 300px; /* Ensuring minimum width for small screens */
     background-color: #016791;
     color: white;
     display: inline-block;
@@ -423,7 +433,8 @@ html, body {
 }
 
 .successCasesInfo {
-    width: 66.5%;
+    flex: 2;
+    min-width: 300px; /* Ensuring minimum width for small screens */
     background-color: #7690A2;
     color: white;
     display: inline-block;
@@ -488,6 +499,9 @@ html, body {
 .successCasesInfo .case {
     margin-bottom: 1em;
     padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .successCasesInfo .case p {
@@ -546,12 +560,13 @@ html, body {
 .row {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 20px;
 }
 
 .case {
-    width: 45%;
+    width: 100%;
     padding: 10px;
     text-align: left;
     color: white;
@@ -559,6 +574,17 @@ html, body {
     margin: 0 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.case .figureUniLogo {
+    width: 3em; /* Adjusted for smaller size */
+    height: 3em; /* Adjusted for smaller size */
+}
+
+.case .uniStudentLogo {
+    width: 70%;
+    height: auto;
 }
 
 .studentName {
@@ -609,8 +635,8 @@ html, body {
     transform: translateX(-50%);
     width: 0;
     height: 0;
-    border-left: 2em solid transparent;
-    border-right: 2em solid transparent;
+    border-left: 1.5em solid transparent;
+    border-right: 1.5em solid transparent;
     border-top: 20px solid white;
 }
 
@@ -638,4 +664,55 @@ html, body {
     text-align: center;
     font-size: 1.2em;
     margin-top: 1em;
+}
+
+/* Responsive Design */
+@media (min-width: 576px) {
+    .textBlock {
+        height: 15em;
+    }
+    .rightTextOnWhiteBack p {
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 768px) {
+    .infoContainer {
+        flex-direction: row; /* Ensure horizontal alignment for larger screens */
+    }
+
+    .michaelInfo, .backgroundInfo {
+        flex: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .infoContainer {
+        flex-direction: column; /* Stack elements vertically for smaller screens */
+    }
+
+    .michaelInfo, .backgroundInfo {
+        width: 100%; /* Ensure full width for smaller screens */
+    }
+
+    .inlineBlock {
+        flex-direction: column; /* Stack inline blocks vertically */
+    }
+
+    .profExp, .successCases {
+        width: 100%; /* Ensure full width for smaller screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .textBlock {
+        height: 25em;
+    }
+    .rightTextOnWhiteBack p {
+        font-size: 1.3em;
+    }
+    .successCasesInfo .case {
+        width: 48%; /* Make each case half-width */
+        display: inline-block; /* Inline-block to align cases side by side */
+    }
 }

@@ -178,7 +178,7 @@ export default function InvestEdu() {
                 </div>
             </main>
             <Footer />
-            <WhatsAppButton />
+            {/* <WhatsAppButton /> */}
         </div>
     )
 }

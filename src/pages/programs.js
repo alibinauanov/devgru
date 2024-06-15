@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 const Programs = () => {
     const { t } = useTranslation();
     const [activeTopic, setActiveTopic] = useState(0);
+    const [openDropdown, setOpenDropdown] = useState(null); // Track the open dropdown
 
     const topics = [
         {
@@ -51,15 +52,15 @@ const Programs = () => {
         }
     ];
 
-    function Dropdown({ title, content, color }) {
-        const [isOpen, setIsOpen] = useState(false);
+    function Dropdown({ title, content, color, index }) {
+        const isOpen = openDropdown === index;
 
         return (
             <div className="dropdown">
                 <button 
                     className="dropdown-button" 
                     style={{ backgroundColor: color }}
-                    onClick={() => setIsOpen(!isOpen)}
+                    onClick={() => setOpenDropdown(isOpen ? null : index)}
                 >
                     {title} <span className={`arrow ${isOpen ? 'open' : ''}`}></span>
                 </button>
@@ -84,6 +85,37 @@ const Programs = () => {
         );
     }
 
+    const [data, setData] = useState({
+        name: "",
+        email: "",
+        phone: ""
+    });
+
+    const { name, email, phone } = data;
+
+    const handleChange = (e) => {
+        setData({ ...data, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const response = await fetch('https://v1.nocodeapi.com/alibucci/google_sheets/NXKoLkMXZDnysUQi?tabId=Sheet1', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify([[name, email, phone, new Date().toLocaleString()]])
+            });
+            await response.json();
+            setData({ name: "", email: "", phone: "" });
+
+        } catch (err) {
+            console.log(err);
+        }
+    };
+
     return (
         <div className='App'>
             <NavBar />
@@ -93,7 +125,7 @@ const Programs = () => {
                     <div className='card card1'>
                         <div className='textCard'>
                             <div className='iconThunder'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-lightning" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" className="bi bi-lightning" viewBox="0 0 16 16">
                                     <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1z"/>
                                 </svg>
                             </div>
@@ -105,7 +137,7 @@ const Programs = () => {
                     <div className='card card2'>
                         <div className='textCard'>
                             <div className='iconThunder'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-lightning" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" className="bi bi-lightning" viewBox="0 0 16 16">
                                     <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1z"/>
                                 </svg>
                             </div>
@@ -117,7 +149,7 @@ const Programs = () => {
                     <div className='card card3'>
                         <div className='textCard'>
                             <div className='iconThunder'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-lightning" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" className="bi bi-lightning" viewBox="0 0 16 16">
                                     <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1z"/>
                                 </svg>
                             </div>
@@ -138,11 +170,11 @@ const Programs = () => {
 
                 <div className='contactForm'>
                     <h3>{t('programs.fillOutForm')}</h3>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <div>
-                            <input type="text" id="name" name="name" placeholder={t('programs.namePlaceholder')} />
-                            <input type="email" id="email" name="email" placeholder={t('programs.emailPlaceholder')} />
-                            <input type="tel" id="phone" name="phone" placeholder={t('programs.phonePlaceholder')} />
+                            <input type="text" id="name" name="name" placeholder={t('programs.namePlaceholder')} value={name} onChange={handleChange} />
+                            <input type="email" id="email" name="email" placeholder={t('programs.emailPlaceholder')} value={email} onChange={handleChange} />
+                            <input type="tel" id="phone" name="phone" placeholder={t('programs.phonePlaceholder')} value={phone} onChange={handleChange} />
                             <button type="submit">{t('programs.submitButtonText')}</button>
                         </div>
                     </form>
@@ -190,6 +222,7 @@ const Programs = () => {
                     {preparationStages.map((stage, index) => (
                         <Dropdown 
                             key={index} 
+                            index={index} 
                             title={stage.title} 
                             content={stage.content} 
                             color={index % 3 === 0 ? '#7690A2' : index % 3 === 1 ? '#317D9E' : '#03628A'}

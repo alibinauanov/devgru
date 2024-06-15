@@ -21,13 +21,12 @@ html, body {
 .education {
     position: relative;
     text-align: center;
-    /* background-image: url('./assets/mainPageBackground.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
     min-height: 100vh;
-    padding-top: 80px; /* Adjust based on NavBar height */
-    /* overflow-x: hidden; Prevent horizontal scrolling */
+    padding-top: 5rem; /* Adjust based on NavBar height */
+    width: 100%;
 }
 
 .firstBlock {
@@ -40,44 +39,43 @@ html, body {
     height: 100vh;
     width: 100%;
     position: relative;
-    bottom: 80px;
     display: block;
+    margin-top: -5rem; /* Close the gap caused by padding in .education */
 }
 
 .blackBlockEducation {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 40%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
     color: white;
-    padding: 70px;
+    padding: 4rem;
     text-align: left;
+    box-sizing: border-box;
 }
 
 .titleEducation {
-    font-size: 3em;
+    font-size: 3rem;
     width: 80%;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     font-weight: 500;
 }
 
 .banner {
     width: 100%;
-    height: 20em;
+    height: 20rem;
     overflow: hidden;
     background: #ffffff;
     position: relative;
-    margin: 20px 0;
-    position: relative;
-    bottom: 2em;
+    margin: 2rem 0;
 }
 
 .banner h2 {
     font-weight: 400;
-    font-size: 3em;
-    margin-left: 1.5em;
-    margin-bottom: 2em;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .bannerTrack {
@@ -87,8 +85,8 @@ html, body {
 
 .bannerImage {
     width: auto;
-    height: 7em;
-    margin-right: 3em;
+    height: 7rem;
+    margin-right: 3rem;
     flex-shrink: 0;
 }
 
@@ -97,32 +95,34 @@ html, body {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-10 * 7em - 10 * 1em)); /* Adjust based on the total width of all images and margins */
+        transform: translateX(calc(-10 * 7rem - 10 * 1rem)); /* Adjust based on the total width of all images and margins */
     }
 }
 
 /* Slider styling */
-.sliderEucation {
-    margin-top: 20px;
+.sliderEducation {
+    margin-top: 2rem;
     padding: 0;
     background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
     width: 100%;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .sliderEducation-tabs {
     display: flex;
     width: 100%;
     background-color: #857A74;
-    height: 5em;
+    height: 5rem;
+    box-sizing: border-box;
 }
 
 .sliderEducation-tab {
     flex: 1;
-    padding: 15px 20px;
+    padding: 1rem 1.5rem;
     cursor: pointer;
     font-weight: 100;
     color: white;
@@ -130,6 +130,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .sliderEducation-tab.active {
@@ -137,19 +138,21 @@ html, body {
 }
 
 .sliderEducation-content {
-    padding: 20px;
+    padding: 2rem;
     background-color: #998E88;
     color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
     width: 100%;
+    box-sizing: border-box;
 }
 
 .sliderEducation-content h2 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 500;
-    margin-top: 1em;
-    margin-bottom: 2em;
-    margin-left: 0.8em;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 0.8rem;
+    box-sizing: border-box;
 }
 
 .sliderEducation-content ul {
@@ -157,17 +160,20 @@ html, body {
     padding-left: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 1rem;
     width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .sliderEducation-content li {
-    font-size: 1.1em;
-    margin-bottom: 3em;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
     flex: 1 1 45%;
     position: relative;
-    padding-left: 4em;
+    padding-left: 4rem;
     font-weight: lighter;
+    box-sizing: border-box;
 }
 
 .sliderEducation-content li::before {
@@ -177,81 +183,74 @@ html, body {
     position: absolute;
     left: 0;
     top: 0;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     color: white;
-    margin-left: 1em;
+    margin-left: 1rem;
 }
 
-/* new */
 .investEduGraph {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.investEduGraph h2{
+.investEduGraph h2 {
     font-weight: 400;
-    font-size: 3em;
-    width: 11em;
-    margin-left: 1em;
-    position: relative;
-    bottom: 3em;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .investEduGraph p {
-    font-size: 1.5em;
-    margin-top: 3em;
-    /* margin-left: 3em; */
-    width: 10em;
-    position: relative;
-    right: 20em;
-    bottom: 2em;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .investGraphWrapper {
-    width: 50%;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
-    margin-right: 5em;
-    margin-top: 5em;
-    margin-bottom: 5em;
-    position: relative;
-    top: 4em;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .investGraph {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
-/* new */
 .textGraph {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     color: black;
-    margin-top: 8em;
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .block {
     flex: 1;
-    margin: 1em;
+    margin: 1rem;
+    max-width: 80%;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .block h2 {
     font-weight: 400;
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .block p {
-    font-size: 1em;
-    line-height: 1.5em;
-    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 .italic {
@@ -259,19 +258,23 @@ html, body {
     font-weight: bold;
 }
 
-/* new */
+.table {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .table h2 {
     font-weight: 400;
-    font-size: 2em;
-    margin-top: 5em;
-    margin-left: 2em;
-
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 0 1rem;
 }
 
 .educationWrapper {
     width: 100%;
-    margin-top: 4em;
+    margin-top: 2rem;
+    box-sizing: border-box;
 }
 
 .tableEducation {
@@ -279,16 +282,22 @@ html, body {
     height: auto;
 }
 
-/* new */
 .lastBlock {
-    margin-top: 1em;
+    margin-top: 1rem;
     color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .sharpCompetition, .standards, .planning {
-    padding: 1em;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .sharpCompetition {
@@ -304,15 +313,80 @@ html, body {
 }
 
 .h2Text h2 {
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-    margin-left: 3em;
-    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0 1rem;
 }
 
 .pText p {
-    margin-top: 0.5em;
-    margin-bottom: 2em;
-    margin-left: 6em;
-    width: 50em;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 576px) {
+    .blackBlockEducation {
+        width: 60%;
+    }
+
+    .banner h2 {
+        font-size: 2.5rem;
+    }
+
+    .sliderEducation-content ul {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .investEduGraph {
+        flex-direction: row;
+    }
+
+    .investEduGraph h2 {
+        font-size: 2.5rem;
+    }
+
+    .investEduGraph p {
+        font-size: 1.5rem;
+    }
+
+    .investGraphWrapper {
+        width: 50%;
+    }
+
+    .textGraph {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .block {
+        max-width: 30%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .banner h2 {
+        font-size: 3rem;
+    }
+
+    .investEduGraph h2 {
+        font-size: 3rem;
+    }
+
+    .investEduGraph p {
+        font-size: 2rem;
+    }
+
+    .block h2 {
+        font-size: 2rem;
+    }
+
+    .block p {
+        font-size: 1.2rem;
+    }
 }

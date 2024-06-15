@@ -20,35 +20,38 @@ html, body {
 
 .App {
     position: relative;
-    text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
     min-height: 100vh;
-    padding-top: 80px; /* Adjust based on NavBar height */
+    padding-top: 5rem; /* Adjust based on NavBar height */
     background-color: #ffffff;
+    width: 100%;
 }
 
 /* Title styling */
 .programsTitle {
-    margin: 1em 0.5em;
-    font-size: 2.5em;
+    margin: 1rem 0.5rem;
+    font-size: 2.5rem;
     font-weight: 500;
     color: #333;
+    text-align: center;
 }
 
 /* Cards container styling */
 .cards {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 1.25rem;
     background-color: #f9f9f9;
-    gap: 20px; /* Space between cards */
+    gap: 1.25rem; /* Space between cards */
+    flex-wrap: wrap; /* Ensure cards wrap on smaller screens */
+    width: 100%;
 }
 
 .card {
     flex: 1;
-    height: 30em;
+    height: 30rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,8 +76,8 @@ html, body {
 .textCard {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    padding: 20px;
-    min-height: 27vh; /* Set a minimum height */
+    padding: 1.25rem;
+    min-height: 17rem; /* Set a minimum height */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,8 +89,7 @@ html, body {
 .iconThunder {
     background-color: rgba(0, 0, 0, 0.7); /* Circle background color */
     border-radius: 50%; /* Make it a circle */
-    padding: 10px;
-    /* margin-bottom: 10px; */
+    padding: 0.625rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,69 +98,68 @@ html, body {
 }
 
 .textCard h3 {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 500;
-    margin-bottom: 1.5em;
-    margin-top: 1em;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
 }
 
 .textCard p {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     text-align: center;
     width: 70%;
     margin: 0; /* Remove default margin */
-    margin-top: -1em; /* Adjust to move the text higher */
+    margin-top: -1rem; /* Adjust to move the text higher */
 }
-
 
 /* Subcontainer styling */
 .subContainer1 {
     top: 0;
     z-index: 5;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left;
     background-color: #A39790;
     color: white;
-    padding: 20px;
-    margin-top: 1em; /* Space between sections */
-    border-radius: 5px;
-    height: 16em;
+    padding: 1.25rem;
+    margin-top: 1rem; /* Space between sections */
+    border-radius: 0.3125rem;
+    height: 16rem;
+    width: 100%;
 }
 
 .subContainer1 h3 {
-    font-size: 2em;
-    margin-bottom: 1em;
-    margin-top: 1em;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     width: 100%;
     text-align: left;
     font-weight: 500;
-    margin-left: 1.4em;
+    margin-left: 1.4rem;
 }
 
 .divider {
     width: 100%;
     border: 0;
-    border-top: 1px solid white;
-    margin: 10px 0;
+    border-top: 0.0625rem solid white;
+    margin: 0.625rem 0;
 }
 
 .inline-texts {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-left: 3%; /* Adjust as needed to decrease the margin */
-    padding: 0 1em; /* Add padding for left and right margins */
-    gap: 10px; /* Add a gap property to control the space between items */
-    margin-top: 2em;
+    padding: 0 1rem; /* Add padding for left and right margins */
+    gap: 0.2rem;
+    margin-top: 5rem;
 }
 
 .inline-texts p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 100;
-    width: 48%; /* Adjust as needed to increase the width */
+    width: 45%; /* Adjust as needed to increase the width */
     margin: 0; /* Remove default margin */
 }
 
@@ -177,35 +178,37 @@ html, body {
 
 /* Contact form styling */
 .contactForm {
-    /* padding: 20px; */
     color: #333;
-    border-radius: 5px;
-    margin-top: 10em;
-    margin-bottom: 5em;
+    border-radius: 0.3125rem;
+    margin-top: 10rem;
+    margin-left: 4rem;
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .contactForm h3 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
     font-weight: 500;
-    margin-left: 2em;
+    text-align: left;
 }
 
 .contactForm form {
-    margin-right: 25em;
-    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .contactForm input {
     flex: 1; /* Allow inputs to take available space */
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 40px;
-    width: 20em;
-    height: 4em;
+    padding: 0.5rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 2.5rem;
+    width: 100%;
+    height: 2.5rem;
     box-sizing: border-box;
-    margin-bottom: 10px; /* Add some margin for better spacing on smaller screens */
-    margin-left: 2em;
+    margin-bottom: 0.625rem; /* Add some margin for better spacing on smaller screens */
 }
 
 .contactForm input::placeholder {
@@ -213,16 +216,16 @@ html, body {
 }
 
 .contactForm button {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     background-color: #2F4B70;
     color: white;
     border: none;
-    border-radius: 40px;
-    width: 15em;
-    height: 4em;
+    border-radius: 2.5rem;
+    width: 100%;
+    height: 2.5rem;
     cursor: pointer;
     flex-shrink: 0; /* Prevent button from shrinking */
-    margin-left: 10px; /* Add margin to the left of the button for spacing */
+    margin-top: 0.625rem; /* Add margin to the top of the button for spacing */
 }
 
 .contactForm button:hover {
@@ -231,54 +234,53 @@ html, body {
 
 /* Mentorship section styling */
 .mentorship {
-    padding: 20px;
+    padding: 1.25rem;
     color: #333;
-    margin-top: 20px; /* Space between sections */
-    border-radius: 5px;
+    margin-top: 1.25rem; /* Space between sections */
+    border-radius: 0.3125rem;
     text-align: left;
-    margin-left: 1.5em;
 }
 
 .mentorship h1 {
-    font-size: 3em;
-    margin-bottom: 0.3em;
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
     font-weight: 900;
 }
 
 .mentorship h3 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     font-weight: 300;
 }
 
 .mentorship p {
-    font-size: 1.2em;
-    width: 50%;
+    font-size: 1.2rem;
+    width: 100%;
 }
-
 
 /* Slider styling */
 .slider {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     padding: 0;
     background-color: #f4f4f4;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
     width: 100%;
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 
 .slider-tabs {
     display: flex;
     width: 100%;
     background-color: #2F4B70;
-    height: 5em;
+    height: 5rem;
 }
 
 .slider-tab {
     flex: 1;
-    padding: 15px 20px;
+    padding: 0.9375rem 1.25rem;
     cursor: pointer;
     font-weight: 100;
     color: white;
@@ -293,19 +295,19 @@ html, body {
 }
 
 .slider-content {
-    padding: 20px;
+    padding: 1.25rem;
     background-color: #2F4B70;
     color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
     width: 100%;
 }
 
 .slider-content h2 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 500;
-    margin-top: 1em;
-    margin-bottom: 2em;
-    margin-left: 0.8em;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;
 }
 
 .slider-content ul {
@@ -313,16 +315,16 @@ html, body {
     padding-left: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
-    width: 80%;
+    gap: 1rem;
+    width: 100%;
 }
 
 .slider-content li {
-    font-size: 1.1em;
-    margin-bottom: 3em;
+    font-size: 1.1rem;
+    margin-bottom: 1.875rem;
     flex: 1 1 45%;
     position: relative;
-    padding-left: 4em;
+    padding-left: 2.5rem;
     font-weight: lighter;
 }
 
@@ -333,19 +335,21 @@ html, body {
     position: absolute;
     left: 0;
     top: 0;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     color: white;
-    margin-left: 1em;
+    margin-left: 0.625rem;
 }
 
 /* Dropdown styling */
 .dropdown-container {
-    margin: 20px 0;
+    margin: 1.25rem 0;
+    width: 100%; /* Ensure full width */
+    text-align: left;
 }
 
 .dropdown-button {
     width: 100%;
-    padding: 1em 1.5em;
+    padding: 1rem 1.25rem;
     color: white;
     border: none;
     cursor: pointer;
@@ -353,7 +357,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 100;
     background-color: inherit;
     transition: background-color 0.3s; /* Add transition for smooth hover effect */
@@ -365,7 +369,6 @@ html, body {
 
 .dropdown-content {
     padding: 0; /* Remove padding */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     box-sizing: border-box;
     color: white;
@@ -374,22 +377,22 @@ html, body {
 
 .dropdown-stage {
     margin: 0; /* Remove margin */
-    padding: 10px;
-    border-radius: 4px;
+    padding: 0.625rem;
+    border-radius: 0.25rem;
     background-color: inherit; /* Inherit the background color from the container */
 }
 
 .dropdown-stage h4 {
     margin: 0; /* Remove margin */
-    padding: 10px; /* Add padding to keep spacing consistent */
-    font-size: 1.2em;
+    padding: 0.625rem; /* Add padding to keep spacing consistent */
+    font-size: 1.2rem;
     color: white;
 }
 
 .dropdown-descriptions {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 0.625rem;
     background-color: inherit; /* Inherit the background color from the container */
 }
 
@@ -397,14 +400,14 @@ html, body {
     display: flex;
     align-items: center;
     width: 45%;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
     background-color: inherit; /* Inherit background color from parent */
 }
 
 .icon {
-    margin-right: 10px;
-    font-size: 1.2em;
+    margin-right: 0.625rem;
+    font-size: 1.2rem;
     color: white;
 }
 
@@ -416,20 +419,69 @@ html, body {
     transform: rotate(180deg);
 }
 
-
-
 .methodology {
-    margin-top: 5em;
-    margin-left: 2em;
+    margin-top: 5rem;
 }
 
 .methodology h1 {
     font-weight: 500;
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 .methodology h3 {
     font-weight: 100;
-    font-size: 1.4em;
-    margin-top: 0.5em;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (min-width: 576px) {
+    .cards {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .contactForm form {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .cards {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .contactForm {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contactForm h3 {
+        margin-right: 2rem;
+    }
+
+    .contactForm form {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cards {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .contactForm {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contactForm h3 {
+        margin-right: 2rem;
+    }
+
+    .contactForm form {
+        width: 50%;
+    }
 }

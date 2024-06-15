@@ -21,13 +21,12 @@ html, body {
 .competition {
     position: relative;
     text-align: center;
-    /* background-image: url('./assets/mainPageBackground.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
     min-height: 100vh;
     padding-top: 80px; /* Adjust based on NavBar height */
-    /* overflow-x: hidden; Prevent horizontal scrolling */
+    width: 100%;
 }
 
 .firstBlockComp {
@@ -40,25 +39,25 @@ html, body {
     height: 100vh;
     width: 100%;
     position: relative;
-    bottom: 80px;
-    display: block;
+    margin-top: -80px; /* Adjusted to remove the gap */
 }
 
 .blackBlockCompetition {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 40%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
     color: white;
-    padding: 70px;
+    padding: 4rem;
     text-align: left;
+    box-sizing: border-box;
 }
 
 .titleCompetition {
-    font-size: 3em;
+    font-size: 3rem;
     width: 80%;
-    margin-bottom: 0.8em;
+    margin-bottom: 1rem;
     font-weight: 500;
 }
 
@@ -68,7 +67,7 @@ html, body {
 }
 
 .underCompetition {
-    font-size: 1.3em;
+    font-size: 1.3rem;
     width: 70%;
 }
 
@@ -82,17 +81,21 @@ html, body {
     width: 40%;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 /* Dropdown styling */
 .dropdown-container {
-    margin: 20px 0;
+    margin: 2rem 0;
+    width: 100%;
+    box-sizing: border-box;
+    /* padding: 0 1rem; */
 }
 
 .dropdown-button {
     width: 100%;
-    padding: 1em 1.5em;
+    padding: 1rem 1.5rem;
     color: white;
     border: none;
     cursor: pointer;
@@ -100,7 +103,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 100;
     background-color: inherit;
     transition: background-color 0.3s; /* Add transition for smooth hover effect */
@@ -117,51 +120,43 @@ html, body {
     box-sizing: border-box;
     color: white;
     background-color: inherit;
-    
 }
 
 .dropdown-stage {
     margin: 0; /* Remove margin */
-    padding: 10px;
+    padding: 1rem;
     border-radius: 4px;
     background-color: inherit; /* Inherit the background color from the container */
 }
 
 .dropdown-stage h4 {
     margin: 0; /* Remove margin */
-    padding: 10px; /* Add padding to keep spacing consistent */
-    font-size: 1.2em;
+    padding: 0.5rem; /* Add padding to keep spacing consistent */
+    font-size: 1.2rem;
     color: white;
 }
 
 .dropdown-descriptions {
     display: block; /* Ensure descriptions are displayed as block elements */
     background-color: inherit; /* Inherit the background color from the container */
-    margin-left: 1em;
+    margin-left: 1rem;
     position: relative;
-    bottom: 2em;
 }
 
 .description {
     display: flex;
     align-items: center;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
     background-color: inherit;
-    margin-bottom: 5px;
-    margin-left: 1em;
-    position: relative;
+    margin-bottom: 0.5rem;
 }
 
 .description::before {
     content: '•'; /* Bullet point symbol */
     color: white;
-    font-size: 1.2em;
-    margin-right: 10px;
-    position: absolute;
-    left: 0; /* Adjust as needed */
-    top: 50%;
-    transform: translateY(-50%);
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
 }
 
 .icon {
@@ -179,24 +174,23 @@ html, body {
 /* profile table */
 .tab-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 0;
-    margin-left: 31.2em;
-    width: 67%;
-    position: relative;
-    top: 1.3em;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .tab-button {
     background-color: #EAECEF;
     color: black;
     border: none;
-    padding: 10px 20px;
-    margin: 1px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1rem;
     text-align: center;
     flex-grow: 1; /* Allow the tab button to grow and take available space */
 }
@@ -208,31 +202,30 @@ html, body {
 .profile-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 2rem;
     table-layout: fixed; /* Fixed table layout */
 }
 
 .profile-table .table-header {
     background-color: #172C43;
     color: white;
-    padding: 10px;
+    padding: 1rem;
     text-align: left;
-    width: 25em;
-    height: 3em;
+    width: 25%;
 }
 
 .profile-table td {
-    padding: 10px;
-    border: 0.2px solid #ccc;
+    padding: 1rem;
+    border: 1px solid #ccc;
     text-align: left;
-    width: calc(100% - 200px);
-    font-size: 1.2em;
+    font-size: 1rem;
+    word-break: break-word;
 }
 
 .titleProfile h2 {
     font-weight: 400;
-    font-size: 2.5em;
-    margin-left: 0.8em;
+    font-size: 2.5rem;
+    margin-left: 1rem;
 }
 
 .categories {
@@ -241,6 +234,259 @@ html, body {
 }
 
 .categories p {
-    margin-bottom: 5px;
-    margin-left: 20px;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 575px) {
+    .question h2, .titleProfile h2 {
+        width: 90%;
+    }
+
+    .blackBlockCompetition {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    .titleCompetition {
+        font-size: 2rem;
+    }
+
+    .underCompetition {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .dropdown-button {
+        font-size: 1.2rem;
+    }
+
+    .dropdown-stage h4 {
+        font-size: 1rem;
+    }
+
+    .description {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .tab-button {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .profile-table .table-header, .profile-table td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .question h2, .titleProfile h2 {
+        width: 80%;
+    }
+
+    .blackBlockCompetition {
+        width: 80%;
+        padding: 2.5rem;
+    }
+
+    .titleCompetition {
+        font-size: 2.2rem;
+    }
+
+    .underCompetition {
+        font-size: 1.1rem;
+    }
+
+    .dropdown-button {
+        font-size: 1.3rem;
+    }
+
+    .dropdown-stage h4 {
+        font-size: 1.1rem;
+    }
+
+    .description {
+        padding: 0.7rem;
+        font-size: 1rem;
+    }
+
+    .tab-button {
+        font-size: 1rem;
+        padding: 0.7rem;
+    }
+
+    .profile-table .table-header, .profile-table td {
+        padding: 0.7rem;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .question h2, .titleProfile h2 {
+        width: 70%;
+    }
+
+    .blackBlockCompetition {
+        width: 60%;
+        padding: 3rem;
+    }
+
+    .titleCompetition {
+        font-size: 2.5rem;
+    }
+
+    .underCompetition {
+        font-size: 1.2rem;
+    }
+
+    .dropdown-button {
+        font-size: 1.4rem;
+    }
+
+    .dropdown-stage h4 {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        padding: 0.8rem;
+        font-size: 1.1rem;
+    }
+
+    .tab-button {
+        font-size: 1.1rem;
+        padding: 0.8rem;
+    }
+
+    .profile-table .table-header, .profile-table td {
+        padding: 0.8rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .question h2, .titleProfile h2 {
+        width: 60%;
+    }
+
+    .blackBlockCompetition {
+        width: 50%;
+        padding: 3.5rem;
+    }
+
+    .titleCompetition {
+        font-size: 2.7rem;
+    }
+
+    .underCompetition {
+        font-size: 1.3rem;
+    }
+
+    .dropdown-button {
+        font-size: 1.5rem;
+    }
+
+    .dropdown-stage h4 {
+        font-size: 1.3rem;
+    }
+
+    .description {
+        padding: 0.9rem;
+        font-size: 1.2rem;
+    }
+
+    .tab-button {
+        font-size: 1.2rem;
+        padding: 0.9rem;
+    }
+
+    .profile-table .table-header, .profile-table td {
+        padding: 0.9rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1366px) {
+    .question h2, .titleProfile h2 {
+        width: 50%;
+    }
+
+    .blackBlockCompetition {
+        width: 45%;
+        padding: 4rem;
+    }
+
+    .titleCompetition {
+        font-size: 3rem;
+    }
+
+    .underCompetition {
+        font-size: 1.5rem;
+    }
+
+    .dropdown-button {
+        font-size: 1.6rem;
+    }
+
+    .dropdown-stage h4 {
+        font-size: 1.4rem;
+    }
+
+    .description {
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .tab-button {
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+
+    .profile-table .table-header, .profile-table td {
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .question h2, .titleProfile h2 {
+        width: 40%;
+    }
+
+    .blackBlockCompetition {
+        width: 40%;
+        padding: 4.5rem;
+    }
+
+    .titleCompetition {
+        font-size: 3.2rem;
+    }
+
+    .underCompetition {
+        font-size: 1.6rem;
+    }
+
+    .dropdown-button {
+        font-size: 1.7rem;
+    }
+
+    .dropdown-stage h4 {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        padding: 1.1rem;
+        font-size: 1.4rem;
+    }
+
+    .tab-button {
+        font-size: 1.4rem;
+        padding: 1.1rem;
+    }
+
+    .profile-table .table-header, .profile-table td {
+        padding: 1.1rem;
+        font-size: 1.4rem;
+    }
 }
