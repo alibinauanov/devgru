@@ -26,6 +26,7 @@ html, body {
   background-attachment: scroll;
   min-height: 100vh;
   padding-top: 80px; /* Adjust based on NavBar height */
+  /* overflow-x: hidden; Prevent horizontal scrolling */
 }
 
 nav {
@@ -46,7 +47,7 @@ nav {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 70%;
   background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
   color: white;
   padding: 70px;
@@ -63,7 +64,7 @@ nav {
   font-size: 1.2em;
   line-height: 1.5;
   font-weight: 100;
-  width: 100%;
+  width: 80%;
 }
 
 .italic {
@@ -99,28 +100,49 @@ nav {
   z-index: 5;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: left;
   background-color: #A39790;
   color: white;
-  width: 100%;
+}
+
+/* .subContainer1 h2 {
+  text-align: left;
+  margin-top: 2em;
+  margin-left: 2em;
+  font-size: 2.5em;
+  font-weight: 500;
 }
 
 .subContainer1 p {
+  position: relative;
+  top: 20%;
+  margin-left: 30%;
+  text-align: left;
+  width: 65%;
+} */
+
+.subContainer1 p {
   font-size: 1.2em;
-  margin: 0;
-  width: 80%;
+  position: relative;
+  bottom: 3.5em;
+  margin-left: 20%;
+  text-align: left;
+  width: 55%;
   font-weight: lighter;
 }
 
 .subContainer1 h2 {
+  margin-right: 24.5em; /* Adjust the value as needed */
   margin-top: 2em;
   font-weight: 500;
   font-size: 3em;
+  position: relative;
+  bottom: 0.5em;
 }
 
 .subContainer2 {
+  /* top: 300px; Adjust this value to control the vertical position */
   z-index: 4;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -130,57 +152,59 @@ nav {
   display: block;
   object-fit: cover;
   object-position: bottom;
+  /* position: absolute;
+  bottom: 0; */
 }
 
 .divP {
   background-color: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  height: auto;
+  width: 40%;
+  height: 25%;
   color: white;
   font-weight: 100;
   position: relative;
-  padding: 20px;
   top: 90.5%;
-  left: 0;
+  left: 60%;
 }
 
 .divPtext {
   text-align: left;
+  position: relative;
+  top: 1.5em;
+  margin-left: 2em;
   font-size: 1.5em;
-  width: 100%;
+  width: 70%;
   font-weight: 100;
 }
 
 .services {
   z-index: 3;
   background: #FAFAFA;
-  height: auto;
-  padding: 20px;
-  width: 100%;
+  height: 40em;
 }
 
 .container {
   align-items: center;
-  width: 100%;
+  width: 60%;
   font-size: 1.2em;
   color: black;
+  position: relative;
+  top: 4em;
   margin: 0 auto;
-  padding: 20px;
 }
 
 .images {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  justify-content: space-around; /* Distributes space around the images */
+  align-items: center; /* Aligns images vertically */
+  width: 200vh;
   gap: 20px; /* Adds space between images */
-  margin-top: 20px;
+  margin-top: 12em;
 }
 
 .images div {
-  width: 100%;
-  height: auto;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  width: 120vh;
+  height: 60vh; /* Set a fixed height */
   background-size: cover; /* Ensures the image covers the entire div */
   background-position: center; /* Centers the image within the div */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -189,6 +213,8 @@ nav {
 .uni1 {
   background-image: url('../assets/uni1.jpg');
   background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  right: 1.3em;
 }
 
 .uni2 {
@@ -199,6 +225,8 @@ nav {
 .uni3 {
   background-image: url('../assets/uni3.jpg');
   background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  left: 1.3em;
 }
 
 .mission {
@@ -207,30 +235,35 @@ nav {
   top: 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: left;
   background-color: #A39790;
   color: white;
-  padding: 20px;
-  width: 100%;
 }
 
 .mission p {
   font-size: 2em;
-  margin: 0;
-  width: 100%;
+  position: relative;
+  bottom: 4.2em;
+  margin-left: 40%;
+  text-align: left;
+  width: 55%;
   font-weight: lighter;
 }
 
 .mission h2 {
+  margin-left: 1.5em; /* Adjust the value as needed */
   margin-top: 3em;
   font-weight: 500;
   font-size: 3em;
+  position: relative;
+  bottom: 0.5em;
+  width: 20%;
 }
 
 .quote {
   fill: white;
+  /* vertical-align: middle; */
   vertical-align: middle;
   width: 32px; /* Adjust width */
   height: 32px; /* Adjust height */
@@ -240,7 +273,6 @@ nav {
 footer {
   z-index: 1;
   background: #b8b8b8;
-  width: 100%;
 }
 
 h2, h3 {
@@ -249,6 +281,15 @@ h2, h3 {
 
 p {
   font-size: 1rem;
+}
+
+.images img {
+  width: 30%;
+  margin-right: 2%;
+}
+
+.images img:last-child {
+  margin-right: 0;
 }
 
 nav ul {
@@ -376,8 +417,7 @@ nav {
 
 .images div {
   width: 100%;
-  height: auto;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  height: 150px;
 }
 
 .mission {
@@ -408,116 +448,28 @@ footer {
 }
 }
 
+
+/* Medium-sized mobile devices (landscape) */
+@media (max-width: 768px) {
+  /* Styles for medium phones and small tablets */
+}
+
 /* Tablets (portrait and landscape) */
-@media (min-width: 481px) and (max-width: 768px) {
-.subContainer1, .subContainer2, .services, .mission {
-  padding: 40px;
-  box-shadow: none;
+@media (max-width: 1024px) {
+  /* Styles for tablets */
 }
 
-.subContainer1 {
-  flex-direction: column;
-  text-align: center;
+/* Small laptops */
+@media (max-width: 1366px) {
+  /* Styles for small laptops */
 }
 
-.subContainer1 h2 {
-  margin: 1em 0;
-  font-size: 2em;
+/* Medium to large desktops */
+@media (min-width: 1367px) {
+  /* Styles for desktops */
 }
 
-.subContainer1 p {
-  margin: 0;
-  font-size: 1.2em;
-  width: 100%;
-  text-align: center;
-}
-
-.subContainer2 {
-  height: auto;
-  background-size: cover;
-  background-position: center;
-  padding: 40px;
-}
-
-.divP {
-  width: 100%;
-  height: auto;
-  top: auto;
-  left: auto;
-  padding: 40px;
-}
-
-.divPtext {
-  font-size: 1.2em;
-  width: 100%;
-  margin: 0;
-  text-align: center;
-}
-
-.services {
-  height: auto;
-  padding: 40px;
-}
-
-.container {
-  width: 100%;
-  font-size: 1.2em;
-  padding: 20px;
-}
-
-.images {
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  gap: 10px;
-  margin-top: 2em;
-}
-
-.images div {
-  width: 100%;
-  height: auto;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
-}
-
-.mission {
-  padding: 40px;
-  flex-direction: column;
-  text-align: center;
-}
-
-.mission h2 {
-  margin: 1em 0;
-  font-size: 2em;
-}
-
-.mission p {
-  margin: 0;
-  font-size: 1.2em;
-  width: 100%;
-  text-align: center;
-}
-
-.quote {
-  width: 28px;
-  height: 28px;
-}
-
-footer {
-  padding: 40px;
-}
-}
-
-/* Desktops and larger screens */
-@media (min-width: 769px) {
-.images {
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.images div {
-  width: 100%;
-  height: auto;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
-}
+/* Large desktops and ultra-wide screens */
+@media (min-width: 1600px) {
+  /* Styles for large desktops and ultra-wide screens */
 }

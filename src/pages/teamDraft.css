@@ -335,6 +335,8 @@ html, body {
     height: 2.5em;
     background-color: white;
     position: relative;
+    /* top: 4rem;
+    right: 11rem; */
 }
 
 .figureUni::after {

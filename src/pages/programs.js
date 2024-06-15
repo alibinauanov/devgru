@@ -101,6 +101,10 @@ const Programs = () => {
         e.preventDefault();
 
         try {
+            // how to get own link?
+            // 1)go to https://app.nocodeapi.com/
+            // 2)create your own google spreadsheet
+            // here is the access to my spreadsheet: https://docs.google.com/spreadsheets/d/1mGqBuR6M2LLA7fO9Of8J4DaqV3M4ucoGOuCml3fqltM/edit?usp=sharing
             const response = await fetch('https://v1.nocodeapi.com/alibucci/google_sheets/NXKoLkMXZDnysUQi?tabId=Sheet1', {
                 method: 'POST',
                 headers: {

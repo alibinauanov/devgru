@@ -21,7 +21,6 @@ html, body {
 .App {
     position: relative;
     text-align: center;
-    background-image: url('../assets/mainPageBackground.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -73,7 +72,7 @@ nav {
     font-weight: bold;
 }
 
-.mainBlock, .subContainer1, .subContainer2, .services, .mission, footer {
+.mainBlockAbout, .subContainer1, .subContainer2, .services, .mission, footer {
     position: relative;
     z-index: 1;
     margin-bottom: -100px; /* Adjust this value to control the overlap */
@@ -82,10 +81,10 @@ nav {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add some shadow for depth */
 }
 
-.mainBlock {
+.mainBlockAbout {
     z-index: 6;
     background: #f8f8f8;
-    /* background-image: url('../assets/mainPageBackground.jpg'); */
+    background-image: url('../assets/aboutUsbckgrnd.jpg');
     background-size: cover; /* Cover ensures the image fills the container */
     background-position: center; /* Center the image */
     background-repeat: no-repeat;
@@ -316,294 +315,694 @@ nav a {
 .social-media img {
     width: 24px;
     height: 24px;
+}   
+
+/* Mobile phones (portrait and landscape) */
+@media (max-width: 480px) {
+  body {
+    padding: 0 10px;
+  }
+
+  nav {
+    padding: 1em;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mainBlockAbout {
+    height: auto;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .blackBlockDevGru {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .titleName {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .whatIsDevGruDesc {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .subContainer1, .subContainer2, .services, .mission {
+    padding: 20px;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+
+  .subContainer1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .subContainer1 h2 {
+    margin: 1em 0;
+    font-size: 1.5em;
+  }
+
+  .subContainer1 p {
+    margin: 0;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .subContainer2 {
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+  }
+
+  .divP {
+    width: 100%;
+    height: auto;
+    top: auto;
+    left: auto;
+    padding: 20px;
+  }
+
+  .divPtext {
+    font-size: 1em;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .services {
+    height: auto;
+    padding: 20px;
+  }
+
+  .container {
+    width: 100%;
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .images {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 2em;
+  }
+
+  .images div {
+    width: 100%;
+    height: 150px;
+  }
+
+  .mission {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission h2 {
+    margin: 1em 0;
+    font-size: 1.5em;
+  }
+
+  .mission p {
+    margin: 0;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .quote {
+    width: 24px;
+    height: 24px;
+  }
+
+  footer {
+    padding: 20px;
+  }
 }
 
-/* Extra Small Devices (Phones) */
-/* Minimum: Less than 576px */
-@media (max-width: 575px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1em;
-        width: 100%;
-    }
-    
-    .blackBlockDevGru {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 70%;
-        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-        color: white;
-        padding: 70px;
-        text-align: left;
-    }
-    
-    .titleName {
-        font-size: 3em;
-        margin-bottom: 10px;
-        font-weight: 500;
-    }
-    
-    .whatIsDevGruDesc {
-        font-size: 1.2em;
-        line-height: 1.5;
-        font-weight: 100;
-        width: 80%;
-    }
-    
-    .italic {
-        font-style: italic;
-        font-weight: bold;
-    }
-    
-    .mainBlock, .subContainer1, .subContainer2, .services, .mission, footer {
-        position: relative;
-        z-index: 1;
-        margin-bottom: -100px; /* Adjust this value to control the overlap */
-        padding: 100px 20px; /* Add padding for content spacing */
-        background: white;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add some shadow for depth */
-    }
-    
-    .mainBlock {
-        z-index: 6;
-        background: #f8f8f8;
-        background-image: url('../assets/mainPageBackground.jpg');
-        background-size: cover; /* Cover ensures the image fills the container */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat;
-        height: 73vh;
-        width: 100%;
-        position: relative;
-        bottom: 80px;
-        display: block;
-    }
-    
-    .subContainer1 {
-        top: 0;
-        z-index: 5;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        display: flex;
-        align-items: center;
-        text-align: left;
-        background-color: #A39790;
-        color: white;
-    }
-    
-    /* .subContainer1 h2 {
-        text-align: left;
-        margin-top: 2em;
-        margin-left: 2em;
-        font-size: 2.5em;
-        font-weight: 500;
-    }
-    
-    .subContainer1 p {
-        position: relative;
-        top: 20%;
-        margin-left: 30%;
-        text-align: left;
-        width: 65%;
-    } */
-    
-    .subContainer1 p {
-        font-size: 1.2em;
-        position: relative;
-        bottom: 3.5em;
-        margin-left: 20%;
-        text-align: left;
-        width: 55%;
-        font-weight: lighter;
-    }
-    
-    .subContainer1 h2 {
-        margin-right: 24.5em; /* Adjust the value as needed */
-        margin-top: 2em;
-        font-weight: 500;
-        font-size: 3em;
-        position: relative;
-        bottom: 0.5em;
-    }
-    
-    .subContainer2 {
-        /* top: 300px; Adjust this value to control the vertical position */
-        z-index: 4;
-        background: rgba(255, 255, 255, 0.9);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        background-image: url('../assets/programsPic.png');
-        width: 100%;
-        height: 41em;
-        display: block;
-        object-fit: cover;
-        object-position: bottom;
-        /* position: absolute;
-        bottom: 0; */
-    }
-    
-    .divP {
-        background-color: rgba(0, 0, 0, 0.8);
-        width: 40%;
-        height: 25%;
-        color: white;
-        font-weight: 100;
-        position: relative;
-        top: 90.5%;
-        left: 60%;
-    }
-    
-    .divPtext {
-        text-align: left;
-        position: relative;
-        top: 1.5em;
-        margin-left: 2em;
-        font-size: 1.5em;
-        width: 70%;
-        font-weight: 100;
-    }
-    
-    .services {
-        z-index: 3;
-        background: #FAFAFA;
-        height: 40em;
-    }
-    
-    .container {
-        align-items: center;
-        width: 60%;
-        font-size: 1.2em;
-        color: black;
-        position: relative;
-        top: 4em;
-        margin: 0 auto;
-    }
-    
-    .images {
-        display: flex;
-        justify-content: space-around; /* Distributes space around the images */
-        align-items: center; /* Aligns images vertically */
-        width: 200vh;
-        gap: 20px; /* Adds space between images */
-        margin-top: 12em;
-    }
-    
-    .images div {
-        width: 100%;
-        height: auto; /* Set a fixed height */
-        background-size: cover; /* Ensures the image covers the entire div */
-        background-position: center; /* Centers the image within the div */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    
-    .uni1 {
-        background-image: url('../assets/uni1.jpg');
-        background-color: rgba(255, 255, 255, 0.9);
-        width: 100px;
-        position: relative;
-        right: 20em;
-    }
-    
-    .uni2, .uni3 {
-        display: none;
-    }
-    
-    .mission {
-        z-index: 2;
-        background: #c8c8c8;
-        top: 0;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        display: flex;
-        align-items: center;
-        text-align: left;
-        background-color: #A39790;
-        color: white;
-    }
-    
-    .mission p {
-        font-size: 2em;
-        position: relative;
-        bottom: 4.2em;
-        margin-left: 40%;
-        text-align: left;
-        width: 55%;
-        font-weight: lighter;
-    }
-    
-    .mission h2 {
-        margin-left: 1.5em; /* Adjust the value as needed */
-        margin-top: 3em;
-        font-weight: 500;
-        font-size: 3em;
-        position: relative;
-        bottom: 0.5em;
-        width: 20%;
-    }
-    
-    .quote {
-        fill: white;
-        /* vertical-align: middle; */
-        vertical-align: middle;
-        width: 32px; /* Adjust width */
-        height: 32px; /* Adjust height */
-        margin: 0 5px;
-    }
-    
-    footer {
-        z-index: 1;
-        background: #b8b8b8;
-    }
-    
-    h2, h3 {
-        font-size: 2rem;
-    }
-    
-    p {
-        font-size: 1rem;
-    }
-    
-    .images img {
-        width: 30%;
-        margin-right: 2%;
-    }
-    
-    .images img:last-child {
-        margin-right: 0;
-    }
-    
-    nav ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    nav a {
-        text-decoration: none;
-        color: #000;
-    }
-    
-    .address, .social-media {
-        margin-top: 20px;
-    }
-    
-    .social-media a {
-        margin-right: 10px;
-    }
-    
-    .social-media img {
-        width: 24px;
-        height: 24px;
-    }
+  
+/* Medium-sized mobile devices (landscape) */
+@media (max-width: 768px) {
+    /* Styles for medium phones and small tablets */
+}
+  
+/* Tablets (portrait and landscape) */
+@media (max-width: 1024px) {
+    /* Styles for tablets */
+}
+  
+/* Small laptops */
+@media (max-width: 1366px) {
+    /* Styles for small laptops */
+}
+  
+/* Medium to large desktops */
+@media (min-width: 1367px) {
+    /* Styles for desktops */
+}
+  
+/* Large desktops and ultra-wide screens */
+@media (min-width: 1600px) {
+    /* Styles for large desktops and ultra-wide screens */
 }
 
-/* Small Devices (Tablets) */
-/* Minimum: 576px */
-/* Maximum: 767px */
-@media (min-width: 576px) and (max-width: 767px) {
 
-}
 
-/* Add responsive design for larger screens */
-@media (min-width: 768px) {
-    
-}
+
+
+/* ================================ */
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  .App {
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    min-height: 100vh;
+    padding-top: 80px; /* Adjust based on NavBar height */
+  }
+  
+  nav {
+    background-color: rgba(51, 51, 51, 0.50);
+    color: white;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .blackBlockDevGru {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white;
+    padding: 70px;
+    text-align: left;
+  }
+  
+  .titleName {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .whatIsDevGruDesc {
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-weight: 100;
+    width: 80%;
+  }
+  
+  .italic {
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .mainBlockAbout, .subContainer1, .subContainer2, .services, .mission, footer {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -100px; /* Adjust this value to control the overlap */
+    padding: 100px 20px; /* Add padding for content spacing */
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add some shadow for depth */
+  }
+  
+  .mainBlockAbout {
+    z-index: 6;
+    background: #f8f8f8;
+    background-image: url('../assets/aboutUsbckgrnd.jpg');
+    background-size: cover; /* Cover ensures the image fills the container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    height: 73vh;
+    width: 100%;
+    position: relative;
+    bottom: 80px;
+    display: block;
+  }
+  
+  .subContainer1 {
+    top: 0;
+    z-index: 5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #A39790;
+    color: white;
+    width: 100%;
+  }
+  
+  .subContainer1 p {
+    font-size: 1.2em;
+    margin: 0;
+    width: 60%;
+    font-weight: lighter;
+    position: relative;
+    bottom: 2em;
+  }
+  
+  .subContainer1 h2 {
+    margin-top: 2em;
+    font-weight: 500;
+    font-size: 3em;
+    margin-right: 45em;
+  }
+  
+  .subContainer2 {
+    z-index: 4;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url('../assets/programsPic.png');
+    width: 100%;
+    height: 41em;
+    display: block;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  
+  .divP {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: auto;
+    color: white;
+    font-weight: 100;
+    position: relative;
+    padding: 20px;
+    top: 90.5%;
+    left: 0;
+  }
+  
+  .divPtext {
+    text-align: left;
+    font-size: 1.5em;
+    width: 100%;
+    font-weight: 100;
+  }
+  
+  .services {
+    z-index: 3;
+    background: #FAFAFA;
+    height: auto;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .container {
+    align-items: center;
+    width: 100%;
+    font-size: 1.2em;
+    color: black;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px; /* Adds space between images */
+    margin-top: 20px;
+  }
+  
+  .images div {
+    width: 100%;
+    height: auto;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image within the div */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .uni1 {
+    background-image: url('../assets/uni1.jpg');
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .uni2 {
+    background-image: url('../assets/uni2.avif');
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .uni3 {
+    background-image: url('../assets/uni3.jpg');
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .mission {
+    z-index: 2;
+    background: #c8c8c8;
+    top: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #A39790;
+    color: white;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .mission p {
+    font-size: 2em;
+    margin: 0;
+    width: 100%;
+    font-weight: lighter;
+  }
+  
+  .mission h2 {
+    margin-top: 3em;
+    font-weight: 500;
+    font-size: 3em;
+  }
+  
+  .quote {
+    fill: white;
+    vertical-align: middle;
+    width: 32px; /* Adjust width */
+    height: 32px; /* Adjust height */
+    margin: 0 5px;
+  }
+  
+  footer {
+    z-index: 1;
+    background: #b8b8b8;
+    width: 100%;
+  }
+  
+  h2, h3 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .address, .social-media {
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    margin-right: 10px;
+  }
+  
+  .social-media img {
+    width: 24px;
+    height: 24px;
+  }   
+  
+  /* Mobile phones (portrait and landscape) */
+  @media (max-width: 480px) {
+  body {
+    padding: 0 10px;
+  }
+  
+  nav {
+    padding: 1em;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .mainBlockAbout {
+    height: auto;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .blackBlockDevGru {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .titleName {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .whatIsDevGruDesc {
+    font-size: 1em;
+    width: 100%;
+  }
+  
+  .subContainer1, .subContainer2, .services, .mission {
+    padding: 20px;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+  
+  .subContainer1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .subContainer1 h2 {
+    margin: 1em 0;
+    font-size: 1.5em;
+  }
+  
+  .subContainer1 p {
+    margin: 0;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .subContainer2 {
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+  }
+  
+  .divP {
+    width: 100%;
+    height: auto;
+    top: auto;
+    left: auto;
+    padding: 20px;
+  }
+  
+  .divPtext {
+    font-size: 1em;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .services {
+    height: auto;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    font-size: 1em;
+    padding: 10px;
+  }
+  
+  .images {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 2em;
+  }
+  
+  .images div {
+    width: 100%;
+    height: auto;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
+  
+  .mission {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .mission h2 {
+    margin: 1em 0;
+    font-size: 1.5em;
+  }
+  
+  .mission p {
+    margin: 0;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .quote {
+    width: 24px;
+    height: 24px;
+  }
+  
+  footer {
+    padding: 20px;
+  }
+  }
+  
+  /* Tablets (portrait and landscape) */
+  @media (min-width: 481px) and (max-width: 768px) {
+  .subContainer1, .subContainer2, .services, .mission {
+    padding: 40px;
+    box-shadow: none;
+  }
+  
+  .subContainer1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .subContainer1 h2 {
+    margin: 1em 0;
+    font-size: 2em;
+  }
+  
+  .subContainer1 p {
+    margin: 0;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .subContainer2 {
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+  }
+  
+  .divP {
+    width: 100%;
+    height: auto;
+    top: auto;
+    left: auto;
+    padding: 40px;
+  }
+  
+  .divPtext {
+    font-size: 1.2em;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .services {
+    height: auto;
+    padding: 40px;
+  }
+  
+  .container {
+    width: 100%;
+    font-size: 1.2em;
+    padding: 20px;
+  }
+  
+  .images {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 2em;
+  }
+  
+  .images div {
+    width: 100%;
+    height: auto;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
+  
+  .mission {
+    padding: 40px;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .mission h2 {
+    margin: 1em 0;
+    font-size: 2em;
+  }
+  
+  .mission p {
+    margin: 0;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .quote {
+    width: 28px;
+    height: 28px;
+  }
+  
+  footer {
+    padding: 40px;
+  }
+  }
+  
+  /* Desktops and larger screens */
+  @media (min-width: 769px) {
+  .images {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .images div {
+    width: 100%;
+    height: auto;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
+  }
+  
